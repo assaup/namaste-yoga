@@ -9,5 +9,5 @@
 .image-blog{
     min-height: 34rem;
     object-fit: cover;
-    border-radius: 5rem;
+    border-radius: var(--border-radius);
 }

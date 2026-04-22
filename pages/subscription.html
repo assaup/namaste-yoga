@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Namaste</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <script src="../js/main.js" defer></script>
+</head>
+<body>
+    
+        <header class="header">
+            <div class="logo">
+                <a href="/">
+                    <img src="../img/logo.svg" alt="Логотип">
+                </a>
+            </div>
+            <button class="burger" id="burger">
+                <span class="burger__line"></span>
+                <span class="burger__line"></span>
+                <span class="burger__line"></span>
+            </button>
+            <nav class="full-menu" id="full-menu">
+                <div class="logo">
+                    <img src="../img/logo-white.svg" alt="Логотип" class="logo-white">
+                </div>
+                <ul class="full-menu__list">
+                    <li><a class="full-menu__link" href="index.html">Главная</a></li>
+                    <li><a class="full-menu__link" href="./pages/about.html">Йога</a></li>
+                    <li><a class="full-menu__link" href="services.html">Расписание</a></li>
+                    <li><a class="full-menu__link" href="contact.html">Абонементы</a></li>
+                    <li><a class="full-menu__link" href="contact.html">Блог</a></li>
+                    <li><a class="full-menu__link" href="contact.html">Личный кабинет</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="container">
+                <section class="section">
+                    <h1 class="title">Абонементы</h1>
+                    <p class="">В нашей студии Вы можете приобрести:</p>
+                    <div class="subscription-cards">
+                        <div class="subscription-card">
+                            <img src="../img/subscription-page/lotos.svg" alt="" class="subscription-card__img">
+                            <h2 class="subscription-card__title">Абонемент на разовое посещение</h2>
+                            <a class="subscription-card__link" href="#one-time-visit">Перейти →</a>
+                        </div>
+                        <div class="subscription-card">
+                            <img src="../img/subscription-page/lotos.svg" alt="" class="subscription-card__img">
+                            <h2 class="subscription-card__title">Абонемент на несколько посещений</h2>
+                            <a class="subscription-card__link" href="#some-exercise">Перейти →</a>
+                        </div>
+                        <div class="subscription-card">
+                            <img src="../img/subscription-page/lotos.svg" alt="" class="subscription-card__img">
+                            <h2 class="subscription-card__title">Подарочный сертификат</h2>
+                            <a class="subscription-card__link" href="#present-sert">Перейти →</a>
+                        </div>
+                    </div>
+                    <p class="text-green">* Можно приобрести на сайте, а так же в студии на стойке администратора</p>
+                </section>
+                <section class="section">
+                    <h2 class="title" id="one-time-visit">Разовое посещение:</h2>
+                    <div class="visit-cards">
+                        <div>
+                            <div class="visit-card">
+                                <h3 class="visit-card__title">Вводное занятие</h3>
+                                <div class="paragraph-wrapper">
+                                    <img class="visit-card__img" src="../img/subscription-page/visit-icon.svg" alt="">
+                                    <p>Доступно для всех направлений, кроме детской йоги*</p>
+                                </div>
+                                <div class="paragraph-wrapper">
+                                    <img class="visit-card__img" src="../img/subscription-page/visit-icon.svg" alt="">
+                                    <p>Только для новых пользователей</p>
+                                </div>
+                                <div class="line"></div>
+                                <p class="visit-card__price">1000руб</p>
+                                <div class="text-align-center">
+                                    <button class="btn btn_red">Купить</button>
+                                </div>
+                            </div>
+                            <p class="text-green">* Вводное занятие для детей - БЕСПЛАТНО</p>
+                        </div>
+                        <div class="visit-card">
+                            <h3 class="visit-card__title">Разовое посещение</h3>
+                            <div class="paragraph-wrapper">
+                                <img class="visit-card__img" src="../img/subscription-page/visit-icon.svg" alt="">
+                                <p>Подходит для опытных посетителей</p>
+                            </div>
+                            <div class="paragraph-wrapper">
+                                <img class="visit-card__img" src="../img/subscription-page/visit-icon.svg" alt="">
+                                <p>Можно воспользоваться в течение года</p>
+                            </div>
+                            <div class="line"></div>
+                            <p class="visit-card__price">2500руб</p>
+                            <div class="text-align-center">
+                                <button class="btn btn_red">Купить</button>
+                            </div>
+                        </div>
+                        <div class="visit-card">
+                            <h3 class="visit-card__title">Детское занятие</h3>
+                            <div class="paragraph-wrapper">
+                                <img class="visit-card__img" src="../img/subscription-page/visit-icon.svg" alt="">
+                                <p>Для детей 3-12 лет</p>
+                            </div>
+                            <div class="paragraph-wrapper">
+                                <img class="visit-card__img" src="../img/subscription-page/visit-icon.svg" alt="">
+                                <p>Гибкое расписание</p>
+                            </div>
+                            <div class="paragraph-wrapper">
+                                <img class="visit-card__img" src="../img/subscription-page/visit-icon.svg" alt="">
+                                <p>Игровая атмосфера</p>
+                            </div>
+                            <div class="line"></div>
+                            <p class="visit-card__price">2500руб</p>
+                            <div class="text-align-center">
+                                <button class="btn btn_red">Купить</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="section">
+                    <h2 class="title" id="some-exercise">Несколько занятий:</h2>
+                    <div class="exercise-cards">
+                        <div class="exercise-card">
+                            <div class="exercise-card__top-wrap">
+                                <img class="exercise-card__img" src="../img/subscription-page/visit-icon.svg" alt="">
+                                <div class="exercise-card__right-wrap">
+                                    <h3 class="exercise-card__title">Абонемент на 5 занятий</h3>
+                                    <p>(1 занятие - 2 300 руб.)</p>
+                                    <p class="exercise-card__price">11 500 руб.</p>
+                                </div>
+                            </div>
+                            <div class="text-align-center">
+                                <button class="btn btn_red">Купить</button>
+                            </div>
+                        </div>
+                        <div class="exercise-card">
+                            <div class="exercise-card__top-wrap">
+                                <img class="exercise-card__img" src="../img/subscription-page/visit-icon.svg" alt="">
+                                <div class="exercise-card__right-wrap">
+                                    <h3 class="exercise-card__title">Абонемент на 10 занятий</h3>
+                                    <p>(1 занятие - 2 000 руб.)</p>
+                                    <p class="exercise-card__price">20 000 руб.</p>
+                                </div>
+                            </div>
+                            <div class="text-align-center">
+                                <button class="btn btn_red">Купить</button>
+                            </div>
+                        </div>
+                        <div class="exercise-card">
+                            <div class="exercise-card__top-wrap">
+                                <img class="exercise-card__img" src="../img/subscription-page/visit-icon.svg" alt="">
+                                <div class="exercise-card__right-wrap">
+                                    <p></p>
+                                    <h3 class="exercise-card__title">Безлимит на месяц</h3>
+                                    <p class="exercise-card__price">35 000 руб.</p>
+                                </div>
+                            </div>
+                            <div class="text-align-center">
+                                <button class="btn btn_red">Купить</button>
+                            </div>
+                        </div>
+                        <div class="exercise-card">
+                            <div class="exercise-card__top-wrap">
+                                <img class="exercise-card__img" src="../img/subscription-page/visit-icon.svg" alt="">
+                                <div class="exercise-card__right-wrap">
+                                    <h3 class="exercise-card__title">Абонемент на 5 занятий (Детский)</h3>
+                                    <p>(1 занятие - 1 800 руб.)</p>
+                                    <p class="exercise-card__price">9 000 руб.</p>
+                                </div>
+                            </div>
+                            <div class="text-align-center">
+                                <button class="btn btn_red">Купить</button>
+                            </div>
+                        </div>
+                        <div class="exercise-card">
+                            <div class="exercise-card__top-wrap">
+                                <img class="exercise-card__img" src="../img/subscription-page/visit-icon.svg" alt="">
+                                <div class="exercise-card__right-wrap">
+                                    <h3 class="exercise-card__title">Абонемент на 10 занятий (Детский)</h3>
+                                    <p>(1 занятие - 1 500 руб.)</p>
+                                    <p class="exercise-card__price">15 000 руб.</p>
+                                </div>
+                            </div>
+                            <div class="text-align-center">
+                                <button class="btn btn_red">Купить</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="section">
+                    <h2 class="title" id="present-sert">Подарочный сертификат:</h2>
+                    <div class="exercise-cards">
+                        <div class="exercise-card card-present">
+                            <div class="exercise-card__top-wrap">
+                                <img class="exercise-card__img" src="../img/subscription-page/visit-icon.svg" alt="">
+                                <div class="exercise-card__right-wrap">
+                                    <h3 class="exercise-card__title">Подарочный сертификат</h3>
+                                    <p class="exercise-card__price">5 000 руб.</p>
+                                </div>
+                            </div>
+                            <div class="text-align-center">
+                                <button class="btn btn_red">Купить</button>
+                            </div>
+                        </div>
+                        <div class="exercise-card card-present">
+                            <div class="exercise-card__top-wrap">
+                                <img class="exercise-card__img" src="../img/subscription-page/visit-icon.svg" alt="">
+                                <div class="exercise-card__right-wrap">
+                                    <h3 class="exercise-card__title">Подарочный сертификат</h3>
+                                    <p class="exercise-card__price">10 000 руб.</p>
+                                </div>
+                            </div>
+                            <div class="text-align-center">
+                                <button class="btn btn_red">Купить</button>
+                            </div>
+                        </div>
+                        <div class="exercise-card card-present">
+                            <div class="exercise-card__top-wrap">
+                                <img class="exercise-card__img" src="../img/subscription-page/visit-icon.svg" alt="">
+                                <div class="exercise-card__right-wrap">
+                                    <h3 class="exercise-card__title">Подарочный сертификат</h3>
+                                    <p class="exercise-card__price">30 000 руб.</p>
+                                </div>
+                            </div>
+                            <div class="text-align-center">
+                                <button class="btn btn_red">Купить</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <section class="section-contacts">
+                <div class="container contacts">
+                    <ul class="contact-list">
+                        <h3 class="contact-title">Адрес:</h3>
+                        <li>Москва, Большая Семёновская ул., 38</li>
+                        <li>Студия йоги “NAMASTE”</li>
+                    </ul>
+                    <ul class="contact-list">
+                        <h3 class="contact-title">Контакты:</h3>
+                        <li>NUM: +7 (495) 223-05-23</li>
+                        <li>TG: @NAMASTEYOGA</li>
+                        <li>MAIL: NAMASTEYOGA@MAIL.RU</li>
+                    </ul>
+                </div>
+                <div class="map-wrapper">
+                        <iframe 
+                            src="https://yandex.ru/map-widget/v1/?ll=37.712398%2C55.781358&z=17&pt=37.712398%2C55.781358,pm2blm" 
+                            width="100%" 
+                            height="450" 
+                            frameborder="0" 
+                            allowfullscreen="true" >
+                        </iframe>
+                    </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container footer-cont">
+                <a href="/">
+                    <img src="../img/logo-white.svg" alt="logo">
+                </a>
+                <div class="footer__block">
+                    <h3 class="footer__title">Главная</h3>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">Расписание</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">Абонементы</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">Йога</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">Блог</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">Личный кабинет</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__block">
+                    <h3 class="footer__title">Ресурсы</h3>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">Карьера</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">Реклама</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">Волонтерство</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">Работа</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__block">
+                    <h3 class="footer__title">Пользователям</h3>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">Поддержка</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">FAQ</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">Документация</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">Партнеры</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__line"></div>
+                <div class="footer__end">
+                    <ul class="footer__list-end">
+                        <li class="footer__item">
+                            <a class="footer__doc" href="#">2026, Moscow Polytechnic University</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__doc" href="#">Privacy Policy</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__doc" href="#">Terms of Service</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__doc" href="#">Cookies Settings</a>
+                        </li>
+                    </ul>
+                    <div class="footer__networks">
+                        <img src="../img/vk.svg" alt="" class="network-icon">
+                        <img src="../img/tg.svg" alt="" class="network-icon">
+                    </div>
+                </div>
+            </div>
+        </footer>
+    
+</body>
+</html>

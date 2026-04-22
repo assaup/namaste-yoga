@@ -7,5 +7,11 @@
     border-radius: 1rem;
 }
 .btn-action{
-    border-radius: 50px;
+    border-radius: var(--border-radius);
+}
+.btn_red{
+    border-radius: var(--border-radius);
+    color: var(--color-white);
+    background-color: var(--color-red);
+    width: 50%;
 }
