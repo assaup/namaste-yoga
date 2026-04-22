@@ -1,0 +1,277 @@
+.section{
+    padding-top: 6rem;
+}
+.section-main{
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../img/main-bg.jpg) no-repeat center / cover;
+    min-height: 95vh;
+    color: var(--color-white);
+    padding-block: 9rem;
+}
+.main__name{
+    font-size: 6.4rem;
+    text-align: center;
+    margin-bottom: 3.4rem;
+}
+.main__title{
+    display: block;
+    font-size: 3.6rem;
+    line-height: 1.5;
+    font-weight: 700;
+    margin-bottom: 6rem;
+}
+.main__text{
+    margin-bottom: 6rem;
+}
+
+
+
+/* секция о нас */
+.about__text{
+  margin-bottom: 1rem;
+}
+.about__text-2{
+  margin-bottom: 4.8rem;
+}
+
+/* секция почему имеено мы */
+.advantages__cont{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem; 
+}
+.advantage{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 26rem;
+  height: 26rem;
+  background-color: var(--color-green-light);
+  border-radius: 50%;
+  text-align: center;
+
+}
+.advantage:nth-child(odd) {
+  transform: translateX(-60px); /* сдвиг влево */
+}
+.advantage:nth-child(even) {
+  transform: translateX(60px); /* сдвиг вправо */
+}
+.advantage:not(:last-child)::after {
+  position: absolute;
+  content: "";
+  width: 4px;
+  height: 9rem;
+  background-color: green;
+  border-radius: 2px;  
+}
+
+.advantage:nth-child(odd)::after {
+  bottom: -6.8rem; 
+  left: 80%;
+  transform: translateX(-50%) rotate(-30deg);
+}
+.advantage:nth-child(even)::after {
+  bottom: -7.5rem; 
+  left: 30%;
+  transform: translateX(-50%) rotate(40deg);
+}
+.advantage__img{
+  margin-bottom: 1rem;
+}
+
+
+/* Секция тренера */
+
+.trainers{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+    column-gap: 2rem;
+    row-gap: 2.5rem;
+    margin-bottom: 5rem;
+}
+.trainer-card{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0px 4px 18.5px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    overflow: hidden;
+    min-height: 20rem;
+}
+.trainer-card__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.trainer-card__info{
+    padding: 1.5rem;
+    position: absolute;
+    padding: 1rem;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+.trainer-card__title{
+    font-weight: 700;
+    font-size: 2rem;
+}
+.trainer-card__text{
+    font-size: 1.4rem;
+}
+.trainer-card.active img {
+    filter: grayscale(100%);
+    opacity: .5; 
+}
+.trainer-card.active .trainer-card__info{
+    opacity: 1; 
+}
+
+
+/* Секция форма первого занятия */
+.section-form{
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../img/form-bg.jpg) no-repeat center / cover;
+    min-height: 95vh;
+    color: var(--color-white);
+    padding-block: 9rem;
+}
+
+.form__title{
+    font-size: 4.8rem;
+    line-height: 1.2;
+    margin-bottom: 1.8rem;
+}
+.form__text{
+    margin-bottom: 1.8rem;
+}
+.form__label{
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+    width: 100%;
+    margin-bottom: 2.4rem;
+}
+.form__input{
+    width: 100%;
+    border-radius: .5rem;
+    padding: 1rem;
+    border: none
+}
+.form__textarea{
+    min-height: 18rem;
+}
+.form__container-agreement{
+    display: flex;
+    align-items: start;
+    gap: .8rem;
+    margin-bottom: 2rem;
+
+}
+.form__checkbox{
+    position: absolute;
+    width: 1;
+    height: 1;
+    opacity: 0;
+    appearance: none;
+}
+.form__checkbox-box{
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    border: 3px solid var(--color-green-light);
+    border-radius: .6rem;
+    position: relative;
+    transition: all 0.2s ease;
+    flex-shrink: 0;
+}
+.form__checkbox-box::after{
+    content: "";
+    position: absolute;
+    left: 5.5px;
+    top: 1.7px;
+    width: 5px;
+    height: 10px;
+    border: solid var(--color-green-light);
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg) scale(0); /* Сжимаем её в 0 */
+    transition: transform 0.2s ease;
+}
+.form__checkbox:checked + .form__checkbox-box { /* СОСТОЯНИЕ: Когда чекбокс нажат */
+    border-color: var(--color-green-light);
+}
+.form__checkbox:checked + .form__checkbox-box::after {
+    transform: rotate(45deg) scale(1);
+}
+.form__checkbox:focus-visible + .form__checkbox-box {
+  outline: 2px solid var(--color-green-light);
+  outline-offset: 2px;
+}
+.form__link-agreement{
+    display: inline;
+    color: inherit;
+}
+
+/* Секция Отзывы */
+.section-review{
+    margin-bottom: 6rem;
+}
+.reviews{
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+.review{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem 2rem 3rem 2rem;
+    background-color: var(--color-white);
+    border-radius: 5rem;
+    box-shadow: 0px 4px 18.5px 0px rgba(0, 0, 0, 0.25);
+    gap: 2rem;
+}
+.review__top-wrapper{
+    display: flex;
+    gap: 1.5rem;
+
+}
+.review__stars{
+    font-size: 3.5rem;
+}
+.review__client{
+    text-align: start;
+    margin-top: -1rem;
+}
+
+
+/* секция адрес */
+.section-contacts{
+    padding-block: 2.5rem;
+    background-color: var(--color-black);
+    color: var(--color-white);
+}
+.contacts{
+    padding-bottom: 2.5rem;
+}
+.contact-list:not(:last-child){
+    margin-bottom: 5rem;
+}
+.contact-title{
+    color: var(--color-green-light);
+}
+.map-wrapper {
+    width: 100%;
+    overflow: hidden;
+}
+.map-wrapper iframe {
+    position:relative;
+    display: block;
+    border: none;
+}

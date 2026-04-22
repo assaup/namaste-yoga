@@ -1,0 +1,11 @@
+@import url('./base/normalize.css');
+@import url('./base/fonts.css');
+@import url('./abstracts/variables.css');
+@import url('./abstracts/utils.css');
+@import url('./base/globals.css');
+
+@import url('./components/button.css');
+@import url('./components/header.css');
+@import url('./components/footer.css');
+
+@import url('./pages/main-page.css');

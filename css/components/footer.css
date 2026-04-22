@@ -1,0 +1,37 @@
+footer{
+    background-color: var(--color-black);
+    color: var(--color-white);
+}
+.footer-cont{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    padding-block: 2.2rem;
+}
+.footer__list{
+
+}
+.footer__title{
+    color: var(--color-green-light);
+    margin-bottom: 1.3rem;
+}
+.footer__item:not(:last-child){
+    margin-bottom: .6rem;
+}
+.footer__link{
+    color: inherit;
+    text-decoration: none;
+}
+.footer__line{
+    border-bottom: 2px solid var(--color-white);
+}
+.footer__list-end{
+    margin-bottom: 2rem;
+}
+.footer__doc{
+    color: inherit;
+}
+.footer__networks{
+    display: flex;
+    gap: 3rem;
+}
