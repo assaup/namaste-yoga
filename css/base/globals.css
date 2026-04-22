@@ -27,5 +27,6 @@ body{
   font-size: var(--font-size-title);
   text-transform: uppercase;
   margin-bottom: 3rem;
+  font-family: 'Ruthless Sketch';
 }
 
