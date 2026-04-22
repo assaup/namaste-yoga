@@ -1,0 +1,13 @@
+.title-blog{
+    font-family: 'Ruthless Sketch';
+    font-size: 4.8rem;
+    margin-bottom: 1.8rem;
+}
+.text-blog{
+    margin-bottom: 1.8rem;
+}
+.image-blog{
+    min-height: 34rem;
+    object-fit: cover;
+    border-radius: 5rem;
+}
