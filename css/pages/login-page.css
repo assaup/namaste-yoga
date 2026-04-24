@@ -1,0 +1,32 @@
+.form__input-login{
+    width: 100%;
+    border-radius: .5rem;
+    padding: 1rem;
+}
+.form__forget-pwd{
+    color: inherit;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+.btn__form{
+    background-color: black;
+    color: var(--color-white);  
+    margin-bottom: 3rem;
+}
+.form__text{
+    font-weight: bold;
+}
+.form__link{
+    color: inherit;
+    text-transform: uppercase;
+}
+
+.form__checkbox-box-register{
+    border-color: var(--color-green-dark);
+}
+.form__checkbox-box-register::after{
+    border-color: var(--color-green-dark);
+}
+.form__checkbox:checked + .form__checkbox-box-register {
+    border-color: var(--color-green-dark);
+}

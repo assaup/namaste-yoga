@@ -18,10 +18,7 @@ footer{
 .footer__item:not(:last-child){
     margin-bottom: .6rem;
 }
-.footer__link{
-    color: inherit;
-    text-decoration: none;
-}
+
 .footer__line{
     border-bottom: 2px solid var(--color-white);
 }

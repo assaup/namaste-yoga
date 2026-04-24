@@ -29,8 +29,18 @@ body{
   margin-bottom: 3rem;
   font-family: 'Ruthless Sketch';
 }
+.title_black{
+  color: var(--color-black);
+  font-size: var(--font-size-title);
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+  font-family: 'Ruthless Sketch';
+}
 
 .text-align-center{
     text-align: center;
 }
-
+.link{
+  color: inherit;
+  text-decoration: none;
+}
