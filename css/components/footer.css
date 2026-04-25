@@ -8,6 +8,11 @@ footer{
     gap: 4rem;
     padding-block: 2.2rem;
 }
+.footer-cont__top{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
 .footer__list{
 
 }
@@ -31,4 +36,29 @@ footer{
 .footer__networks{
     display: flex;
     gap: 3rem;
+}
+
+@media (min-width: 768px) {
+    .footer-cont{
+        padding-block: 5rem;
+        gap: 2rem;
+    }
+    .footer-cont__top{
+        gap: 1rem;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .footer__end{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+    .footer__list-end{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        margin-bottom: 0;
+    }
+    .
 }

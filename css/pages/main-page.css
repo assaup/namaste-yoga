@@ -1,6 +1,4 @@
-.section{
-    padding-block: 3rem;
-}
+
 .section-main{
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../img/main-bg.jpg) no-repeat center / cover;
     min-height: 95vh;
@@ -83,7 +81,6 @@
 .advantage__img{
   margin-bottom: 1rem;
 }
-
 
 /* Секция тренера */
 
@@ -276,4 +273,128 @@
     position:relative;
     display: block;
     border: none;
+}
+
+@media (min-width: 768px) {
+    .main__name{
+        font-size: 8rem;
+    }
+    .main__title{
+        font-size: 3.5rem;
+        margin-bottom: 3rem;
+    }
+    .main__text{
+        max-width: 60%;
+        margin-bottom: 3rem;
+    }
+
+    /* Секция тренера */
+    .trainers {
+        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    }
+
+    /* Секция форма */
+    .form{
+        text-align: center;
+        max-width: 90%;
+        margin: 0 auto;
+    }
+    .form__label{
+        text-align: start;
+    }
+    .form__textarea{
+        min-height: 10rem;
+    }
+    .form__title{
+        text-align: center;
+    }
+    .form__text{
+        text-align: center;
+    }
+
+
+    /* Секция контакты */
+    .section-contacts{
+        padding: 0;
+        display: flex;
+        flex-direction: row-reverse;
+        gap:3rem
+    }
+    .contacts{
+        padding: 5rem 3rem;
+    }
+}
+
+@media (min-width: 1280px) {
+    .main__name{
+        font-size: 12rem;
+    }
+    .main__title{
+        font-size: var(--font-size-title-desktop);
+    }
+    .section-main{
+        padding: 4rem;
+    }
+
+    
+    /* секция о нас */
+    .section-about{
+        display: flex;
+        gap: 2rem;
+    }
+    .section-about__right{
+        max-width: 50%;
+    }
+
+
+    /* секция почем мы */
+    .advantages__cont{
+        gap: 0;
+        flex-direction: row;
+        margin-bottom: 10rem;
+    }
+    .advantage{
+        width: 24rem;
+        height: 24rem;
+    }
+    .advantage__text{
+        padding-inline: 1.5rem;
+    }
+    .advantage:nth-child(odd) {
+        transform: translateX(0); 
+    }
+    .advantage:nth-child(even) {
+        transform: translateY(200px);
+    }
+    .advantage:nth-child(odd)::after {
+        bottom: -3.7rem; 
+        left: 100%;
+        transform: translateX(-50%) rotate(-50deg);
+    }
+    .advantage:nth-child(even)::after {
+        bottom: 2rem; 
+        left: 108%;
+        transform: translateY(-150%) rotate(50deg);
+    }
+
+
+    /* секция тренера */
+    .trainers {
+        grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+        row-gap: 6rem;
+    }
+
+
+    /* Секция форма */
+    .form{
+        max-width: 60%;
+    }
+
+    /* Секция отзывы */
+    .reviews{
+        flex-direction: row;
+    }
+    .review{
+        padding: 5rem 2rem;
+    }
 }

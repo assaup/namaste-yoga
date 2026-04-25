@@ -12,28 +12,30 @@
       <div class="logo">
         <img src="./img/logo.svg" alt="Логотип" />
       </div>
-      <button class="burger" id="burger">
-        <span class="burger__line"></span>
-        <span class="burger__line"></span>
-        <span class="burger__line"></span>
-      </button>
+
       <nav class="full-menu" id="full-menu">
-        <div class="logo">
+        <div class="logo logo--menu">
           <img src="./img/logo-white.svg" alt="Логотип" class="logo-white" />
         </div>
         <ul class="full-menu__list">
           <li><a class="full-menu__link" href="/">Главная</a></li>
           <li><a class="full-menu__link" href="./pages/about.html">Йога</a></li>
-          <li>
-            <a class="full-menu__link" href="./pages/shedule.html">Расписание</a>
-          </li>
+          <li><a class="full-menu__link" href="./pages/shedule.html">Расписание</a></li>
           <li><a class="full-menu__link" href="./pages/subscription.html">Абонементы</a></li>
           <li><a class="full-menu__link" href="./pages/blog.html">Блог</a></li>
-          <li>
-            <a class="full-menu__link" href="./pages/profile.html">Личный кабинет</a>
-          </li>
         </ul>
       </nav>
+
+      <button class="burger" id="burger">
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+      </button>
+
+      <!-- Кнопка войти — скрыта на мобильном -->
+      <a href="./pages/profile.html" class="btn__login">
+        <img src="./img/profile.svg" alt="">
+      </a>
     </header>
     <main>
       <section class="section section-main">
@@ -50,21 +52,23 @@
         </div>
       </section>
       <div class="container">
-        <section class="section">
-          <h2 class="title">О нас</h2>
-          <p class="about__text">
-            Мы — современная студия йоги, где практика доступна людям с любым
-            уровнем подготовки. Наша команда состоит из сертифицированных
-            преподавателей, которые помогают безопасно и постепенно развивать
-            силу, гибкость и баланс.
-          </p>
-          <p class="about__text-2">
-            В студии проходят регулярные групповые занятия, индивидуальные
-            практики и классы для начинающих. Мы создали спокойное и комфортное
-            пространство, где можно отвлечься от повседневной суеты и
-            сосредоточиться на себе. Наша цель — сделать йогу естественной
-            частью здорового и гармоничного образа жизни.
-          </p>
+        <section class="section section-about">
+          <div class="section-about__right">
+            <h2 class="title">О нас</h2>
+            <p class="about__text">
+              Мы — современная студия йоги, где практика доступна людям с любым
+              уровнем подготовки. Наша команда состоит из сертифицированных
+              преподавателей, которые помогают безопасно и постепенно развивать
+              силу, гибкость и баланс.
+            </p>
+            <p class="about__text-2">
+              В студии проходят регулярные групповые занятия, индивидуальные
+              практики и классы для начинающих. Мы создали спокойное и комфортное
+              пространство, где можно отвлечься от повседневной суеты и
+              сосредоточиться на себе. Наша цель — сделать йогу естественной
+              частью здорового и гармоничного образа жизни.
+            </p>
+          </div>
           <div class="img-wrapper">
             <img src="./img/about-img.jpg" alt="" />
           </div>
@@ -226,11 +230,10 @@
       </div>
       <section class="section section-form">
         <div class="container">
+          <h2 class="form__title">Записаться на вводное занятие</h2>
+          <p class="form__text">Попробуйте себя в мире йоги всего за 1000 руб.</p>
           <form class="form">
-            <h2 class="form__title">Записаться на вводное занятие</h2>
-            <p class="form__text">
-              Попробуйте себя в мире йоги всего за 1000 руб.
-            </p>
+            
             <label class="form__label">
               ФИО
               <input
@@ -264,8 +267,8 @@
                 >
               </p>
             </label>
-
             <button class="btn btn-action" type="submit">Записаться</button>
+            
           </form>
         </div>
       </section>
@@ -355,62 +358,64 @@
     </main>
     <footer class="footer">
       <div class="container footer-cont">
-        <a href="/">
-          <img src="./img/logo-white.svg" alt="logo" />
-        </a>
-        <div class="footer__block">
-          <h3 class="footer__title">Главная</h3>
-          <ul class="footer__list">
-            <li class="footer__item">
-              <a class="link" href="./pages/shedule.html">Расписание</a>
-            </li>
-            <li class="footer__item">
-              <a class="link" href="./pages/subscription.html">Абонементы</a>
-            </li>
-            <li class="footer__item">
-              <a class="link" href="./pages/about.html">Йога</a>
-            </li>
-            <li class="footer__item">
-              <a class="link" href="./pages/blog.html">Блог</a>
-            </li>
-            <li class="footer__item">
-              <a class="link" href="./pages/profile.html">Личный кабинет</a>
-            </li>
-          </ul>
-        </div>
-        <div class="footer__block">
-          <h3 class="footer__title">Ресурсы</h3>
-          <ul class="footer__list">
-            <li class="footer__item">
-              <a class="link" href="#">Карьера</a>
-            </li>
-            <li class="footer__item">
-              <a class="link" href="#">Реклама</a>
-            </li>
-            <li class="footer__item">
-              <a class="link" href="#">Волонтерство</a>
-            </li>
-            <li class="footer__item">
-              <a class="link" href="#">Работа</a>
-            </li>
-          </ul>
-        </div>
-        <div class="footer__block">
-          <h3 class="footer__title">Пользователям</h3>
-          <ul class="footer__list">
-            <li class="footer__item">
-              <a class="link" href="#">Поддержка</a>
-            </li>
-            <li class="footer__item">
-              <a class="link" href="#">FAQ</a>
-            </li>
-            <li class="footer__item">
-              <a class="link" href="#">Документация</a>
-            </li>
-            <li class="footer__item">
-              <a class="link" href="#">Партнеры</a>
-            </li>
-          </ul>
+        <div class="footer-cont__top">
+          <a href="/">
+            <img src="./img/logo-white.svg" alt="logo" />
+          </a>
+          <div class="footer__block">
+            <h3 class="footer__title">Главная</h3>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a class="link" href="./pages/shedule.html">Расписание</a>
+              </li>
+              <li class="footer__item">
+                <a class="link" href="./pages/subscription.html">Абонементы</a>
+              </li>
+              <li class="footer__item">
+                <a class="link" href="./pages/about.html">Йога</a>
+              </li>
+              <li class="footer__item">
+                <a class="link" href="./pages/blog.html">Блог</a>
+              </li>
+              <li class="footer__item">
+                <a class="link" href="./pages/profile.html">Личный кабинет</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__block">
+            <h3 class="footer__title">Ресурсы</h3>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a class="link" href="#">Карьера</a>
+              </li>
+              <li class="footer__item">
+                <a class="link" href="#">Реклама</a>
+              </li>
+              <li class="footer__item">
+                <a class="link" href="#">Волонтерство</a>
+              </li>
+              <li class="footer__item">
+                <a class="link" href="#">Работа</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__block">
+            <h3 class="footer__title">Пользователям</h3>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a class="link" href="#">Поддержка</a>
+              </li>
+              <li class="footer__item">
+                <a class="link" href="#">FAQ</a>
+              </li>
+              <li class="footer__item">
+                <a class="link" href="#">Документация</a>
+              </li>
+              <li class="footer__item">
+                <a class="link" href="#">Партнеры</a>
+              </li>
+            </ul>
+          </div>
         </div>
         <div class="footer__line"></div>
         <div class="footer__end">

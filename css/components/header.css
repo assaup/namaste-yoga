@@ -1,9 +1,8 @@
-.header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding:1rem 3rem;
-
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3rem;
 }
 
 .burger {
@@ -30,70 +29,124 @@
 
 /* Стили для полноэкранного меню */
 .full-menu {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background-color: var(--color-black); 
-    z-index: 9; 
-    
-    /* Центрируем ссылки */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: 11rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--color-black);
+  z-index: 9;
 
-    /* Скрываем по умолчанию */
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.4s ease;
+  /* Центрируем ссылки */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 11rem;
+
+  /* Скрываем по умолчанию */
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s ease;
 }
 
 /* Состояние, когда меню открыто */
 .full-menu.is-active {
-    opacity: 1;
-    visibility: visible;
+  opacity: 1;
+  visibility: visible;
 }
 
 .full-menu__list {
-    list-style: none;
-    text-align: center;
-    padding: 0;
+  list-style: none;
+  text-align: center;
+  padding: 0;
 }
 
 .full-menu__list li {
-    margin: 2rem 0;
+  margin: 2rem 0;
 }
 
 .full-menu__link {
-    font-size: 2rem;
-    text-decoration: none;
-    color: var(--color-white);
-    transition: color 0.3s;
+  font-size: 2rem;
+  text-decoration: none;
+  color: var(--color-white);
+  transition: color 0.3s;
 }
 .full-menu__link:hover {
-  color: var(--color-green-light)
+  color: var(--color-green-light);
 }
 
 /* Анимация самого бургера (превращение в крестик) */
 .burger.is-active .burger__line:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
-    background-color: var(--color-white)
+  transform: translateY(8px) rotate(45deg);
+  background-color: var(--color-white);
 }
 .burger.is-active .burger__line:nth-child(2) {
-    opacity: 0;
+  opacity: 0;
 }
 .burger.is-active .burger__line:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
-    background-color: var(--color-white)
-
+  transform: translateY(-8px) rotate(-45deg);
+  background-color: var(--color-white);
 }
 /* Чтобы контент за меню не прокручивался */
 body.no-scroll {
-    overflow: hidden;
+  overflow: hidden;
 }
-.logo-white{
+.logo-white {
   width: 20rem;
+}
+.btn__login {
+  display: none;
+}
+
+@media (min-width: 768px) {
+    .header{
+        padding-block: .3rem;
+    }
+  .burger {
+    display: none;
+  }
+
+  .btn__login {
+    display: inline-block;
+    white-space: nowrap;
+    padding-top: .7rem;
+    
+  }
+
+  .full-menu {
+    position: static;
+    height: auto;
+    background-color: transparent;
+    opacity: 1;
+    visibility: visible;
+    padding-top: 0; 
+    flex: 1; 
+    display: flex;
+  }
+
+  .logo--menu {
+    display: none;
+  }
+
+  .full-menu__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 70%;
+    gap: 1.5rem;
+    margin: 0;
+  }
+
+  .full-menu__list li {
+    margin: 0;
+  }
+  .full-menu__link:hover {
+  color: var(--color-green-dark);
+}
+
+  .full-menu__link {
+    font-size: 1.6rem;
+    color: var(--color-black);
+  }
 }
