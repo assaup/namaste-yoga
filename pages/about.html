@@ -10,37 +10,44 @@
   <body>
     <header class="header">
       <div class="logo">
-        <a href="/">
-          <img src="../img/logo.svg" alt="Логотип" />
-        </a>
+        <img src="../img/logo.svg" alt="Логотип" />
       </div>
+
+      <nav class="full-menu" id="full-menu">
+        <div class="logo logo--menu">
+          <img src="../img/logo-white.svg" alt="Логотип" class="logo-white" />
+        </div>
+        <ul class="full-menu__list">
+          <li><a class="full-menu__link" href="/">Главная</a></li>
+          <li><a class="full-menu__link" href="../pages/about.html">Йога</a></li>
+          <li>
+            <a class="full-menu__link" href="../pages/shedule.html"
+              >Расписание</a
+            >
+          </li>
+          <li>
+            <a class="full-menu__link" href="../pages/subscription.html"
+              >Абонементы</a
+            >
+          </li>
+          <li><a class="full-menu__link" href="../pages/blog.html">Блог</a></li>
+        </ul>
+      </nav>
+
       <button class="burger" id="burger">
         <span class="burger__line"></span>
         <span class="burger__line"></span>
         <span class="burger__line"></span>
       </button>
-      <nav class="full-menu" id="full-menu">
-        <div class="logo">
-          <img src="../img/logo-white.svg" alt="Логотип" class="logo-white" />
-        </div>
-        <ul class="full-menu__list">
-          <li><a class="full-menu__link" href="/">Главная</a></li>
-          <li><a class="full-menu__link" href="./about.html">Йога</a></li>
-          <li>
-            <a class="full-menu__link" href="./shedule.html">Расписание</a>
-          </li>
-          <li><a class="full-menu__link" href="./subscription.html">Абонементы</a></li>
-          <li><a class="full-menu__link" href="./blog.html">Блог</a></li>
-          <li>
-            <a class="full-menu__link" href="./profile.html">Личный кабинет</a>
-          </li>
-        </ul>
-      </nav>
+
+      <a href="../pages/profile.html" class="btn__login">
+        <img src="../img/profile.svg" alt="" />
+      </a>
     </header>
     <main>
       <div class="container">
         <section class="section">
-          <h1 class="title">О нас</h1>
+          <h1 class="title">Йога</h1>
           <div class="about__content">
             <p class="types-of-yoga__text">
               В нашей студии вы можете практиковать различные виды йоги:
@@ -63,9 +70,9 @@
         </section>
         <section class="section" id="hatha">
           <div class="title-of-yoga-wrapper">
-            <h2>хатха-йога</h2>
+            <h2 class="title-of-yoga">хатха-йога</h2>
           </div>
-          <p class="text-center">
+          <p class="text-center yoga-text-center">
             Один из самых древних и классических видов йоги, сформировавшийся в
             Индии как основа большинства современных практик. Подходит для
             начинающих и тех, кто хочет мягко войти в йогу. Основной акцент — на
@@ -73,40 +80,58 @@
             и вниманием к технике. Помогает снизить стресс и улучшить общее
             самочувствие.
           </p>
-          <img class="yoga-image" src="../img/about-page/exercise.jpg" alt="" />
+          <img
+            class="yoga-image yoga-image-hatha"
+            src="../img/about-page/exercise.jpg"
+            alt=""
+          />
         </section>
         <section class="section" id="vinyasa">
           <div class="title-of-yoga-wrapper">
-            <h2>виньяса-йога</h2>
+            <h2 class="title-of-yoga">виньяса-йога</h2>
           </div>
-          <p class="text-center">
-            Более современное направление, возникшее на основе хатха-йоги, но с
-            акцентом на динамику и плавные переходы. Подходит тем, кто любит
-            движение и разнообразие. Практика строится как «поток», где дыхание
-            синхронизируется с движениями. Отличается ритмичностью и ощущением
-            медитации в движении. Развивает выносливость и улучшает координацию.
-          </p>
-          <img class="yoga-image" src="../img/about-page/exer-2.jpg" alt="" />
+          <div class="vinyasa-content">
+            <p class="text-center yoga-text-left">
+              Более современное направление, возникшее на основе хатха-йоги, но
+              с акцентом на динамику и плавные переходы. Подходит тем, кто любит
+              движение и разнообразие. Практика строится как «поток», где
+              дыхание синхронизируется с движениями. Отличается ритмичностью и
+              ощущением медитации в движении. Развивает выносливость и улучшает
+              координацию.
+            </p>
+            <img
+              class="yoga-image yoga-image-vinyasa"
+              src="../img/about-page/exer-2.jpg"
+              alt=""
+            />
+          </div>
         </section>
         <section class="section" id="strong-yoga">
           <div class="title-of-yoga-wrapper">
-            <h2>силовая йога</h2>
+            <h2 class="title-of-yoga">силовая йога</h2>
           </div>
-          <p class="text-center">
-            Современная адаптация йоги, вдохновлённая традициями, но
-            ориентированная на физическую нагрузку. Подходит для тех, кто хочет
-            укрепить мышцы и повысить выносливость. Включает интенсивные
-            упражнения и удержание поз. Отличается высокой энергозатратностью и
-            фитнес-направленностью. Способствует формированию сильного и
-            подтянутого тела.
-          </p>
-          <img class="yoga-image" src="../img/about-page/exer-3.jpg" alt="" />
+          <div class="strong-yoga-content">
+            <p class="text-center yoga-text-right">
+              Современная адаптация йоги, вдохновлённая традициями, но
+              ориентированная на физическую нагрузку. Подходит для тех, кто
+              хочет укрепить мышцы и повысить выносливость. Включает интенсивные
+              упражнения и удержание поз. Отличается высокой энергозатратностью
+              и фитнес-направленностью. Способствует формированию сильного и
+              подтянутого тела.
+            </p>
+            <img
+              class="yoga-image yoga-image-vinyasa"
+              src="../img/about-page/exer-3.jpg"
+              alt=""
+            />
+          </div>
         </section>
         <section class="section" id="child-yoga">
           <div class="title-of-yoga-wrapper">
-            <h2>йога для детей</h2>
+            <h2 class="title-of-yoga">йога для детей</h2>
           </div>
-          <p class="text-center">
+          <div class="vinyasa-content">
+            <p class="text-center yoga-text-left">
             Специально адаптированная практика, созданная с учётом возраста и
             особенностей детей. Подходит для развития гибкости, координации и
             концентрации. Занятия проходят в игровой форме с элементами сказок и
@@ -114,71 +139,72 @@
             перегрузок. Помогает ребёнку лучше чувствовать своё тело и развивать
             внимание.
           </p>
-          <img class="yoga-image" src="../img/about-page/exer-4.jpg" alt="" />
+          <img class="yoga-image yoga-image-vinyasa" src="../img/about-page/exer-4.jpg" alt="" />
+          </div>
+          
         </section>
       </div>
     </main>
     <footer class="footer">
       <div class="container footer-cont">
-        <a href="/">
-          <img src="../img/logo-white.svg" alt="logo" />
-        </a>
-        <div class="footer__block">
-          <h3 class="footer__title">Главная</h3>
-          <ul class="footer__list">
-            <li class="footer__item">
-              <a class="link" href="#">Расписание</a>
-            </li>
-            <li class="footer__item">
-              <a class="link" href="#">Абонементы</a>
-            </li>
-            <li class="footer__item">
-              <a class="link" href="#">Йога</a>
-            </li>
-            <li class="footer__item">
-              <a class="link" href="#">Блог</a>
-            </li>
-            <li class="footer__item">
-              <a class="link" href="#">Личный кабинет</a>
-            </li>
-          </ul>
-        </div>
-        <div class="footer__block">
-          <h3 class="footer__title">Ресурсы</h3>
-          <ul class="footer__list">
-            <li class="footer__item">
-              <a class="link" href="./shedule.html">Расписание</a>
-            </li>
-            <li class="footer__item">
-              <a class="link" href="./subscription.html">Абонементы</a>
-            </li>
-            <li class="footer__item">
-              <a class="link" href="./about.html">Йога</a>
-            </li>
-            <li class="footer__item">
-              <a class="link" href="./blog.html">Блог</a>
-            </li>
-            <li class="footer__item">
-              <a class="link" href="./profile.html">Личный кабинет</a>
-            </li>
-          </ul>
-        </div>
-        <div class="footer__block">
-          <h3 class="footer__title">Пользователям</h3>
-          <ul class="footer__list">
-            <li class="footer__item">
-              <a class="link" href="#">Поддержка</a>
-            </li>
-            <li class="footer__item">
-              <a class="link" href="#">FAQ</a>
-            </li>
-            <li class="footer__item">
-              <a class="link" href="#">Документация</a>
-            </li>
-            <li class="footer__item">
-              <a class="link" href="#">Партнеры</a>
-            </li>
-          </ul>
+        <div class="footer-cont__top">
+          <a href="/">
+            <img src="../img/logo-white.svg" alt="logo" />
+          </a>
+          <div class="footer__block">
+            <h3 class="footer__title">Главная</h3>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a class="link" href="../pages/shedule.html">Расписание</a>
+              </li>
+              <li class="footer__item">
+                <a class="link" href="../pages/subscription.html">Абонементы</a>
+              </li>
+              <li class="footer__item">
+                <a class="link" href="../pages/about.html">Йога</a>
+              </li>
+              <li class="footer__item">
+                <a class="link" href="../pages/blog.html">Блог</a>
+              </li>
+              <li class="footer__item">
+                <a class="link" href="../pages/profile.html">Личный кабинет</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__block">
+            <h3 class="footer__title">Ресурсы</h3>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a class="link" href="#">Карьера</a>
+              </li>
+              <li class="footer__item">
+                <a class="link" href="#">Реклама</a>
+              </li>
+              <li class="footer__item">
+                <a class="link" href="#">Волонтерство</a>
+              </li>
+              <li class="footer__item">
+                <a class="link" href="#">Работа</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__block">
+            <h3 class="footer__title">Пользователям</h3>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a class="link" href="#">Поддержка</a>
+              </li>
+              <li class="footer__item">
+                <a class="link" href="#">FAQ</a>
+              </li>
+              <li class="footer__item">
+                <a class="link" href="#">Документация</a>
+              </li>
+              <li class="footer__item">
+                <a class="link" href="#">Партнеры</a>
+              </li>
+            </ul>
+          </div>
         </div>
         <div class="footer__line"></div>
         <div class="footer__end">

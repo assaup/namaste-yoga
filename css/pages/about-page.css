@@ -26,8 +26,6 @@
 }
 .types-of-yoga__item::before {
   content: counter(my-counter) "";
-
-  /* Твои кастомные стили */
   color: var(--color-black);
   font-weight: bold;
   font-size: 2rem;
@@ -48,13 +46,16 @@
 
 /* секция 2 */
 .title-of-yoga-wrapper {
-  font-family: "Ruthless Sketch";
-  font-size: 3rem;
-  color: var(--color-black);
+  margin-bottom: 4rem;
   text-align: center;
+
+}
+.title-of-yoga{
+  font-family: "Ruthless Sketch";
+  font-size: 4.8rem;
+  color: var(--color-black);
   border-radius: var(--border-radius);
   box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.25);
-  margin-bottom: 4rem;
   text-transform: uppercase;
   padding-inline: 2rem;
   line-height: 1.5;
@@ -66,4 +67,66 @@
 .yoga-image {
   display: block;
   border-radius: var(--border-radius);
+}
+
+@media (min-width: 768px) {
+  .about__content{
+    padding: 6rem 10rem;
+  }
+  .title-of-yoga{
+    display: inline-block;
+    padding-inline: clamp(5rem, 10vw, 10rem);
+  }
+  .yoga-image-hatha{
+    width: 100%;
+    max-height: 33rem;
+    object-fit: cover;
+    object-position: bottom;
+  }
+
+  .vinyasa-content{
+    display: flex;
+    gap: 2rem;
+  }
+  .yoga-text-left{
+    text-align: left;
+    width: 50%;
+    padding-top: 5rem;
+  }
+  .yoga-image-vinyasa{
+    width: 50%;
+    object-fit: cover;
+    object-position: 60%;
+  }
+
+  .strong-yoga-content{
+    display: flex;
+    gap: 2rem;
+    flex-direction: row-reverse;
+  }
+  .yoga-text-right{
+    text-align: right;
+    padding-top: 5rem;
+  }
+
+  
+  
+}
+@media (min-width: 1280px) {
+  .types-of-yoga__text{
+    width: 50%;
+  }
+  .types-of-yoga{
+    padding-left: 8rem;
+  }
+  .yoga-text-center{
+    padding-inline: 13rem;
+  }
+  .vinyasa-content, .strong-yoga-content{
+    gap: 10rem;
+  }
+  
+  
+  
+
 }
