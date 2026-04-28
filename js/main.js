@@ -92,8 +92,10 @@ function createCard(cls) {
     <div class="class-card">
       <p class="class-card__header">${dateStr}</p>
       <div class="class-card__body">
-        <p class="class-card__title">${cls.title}. <span class="class-card__time">${cls.time}</span></p>
-        <p class="class-card__trainer">${cls.trainer}</p>
+        <div class="class-card__text">
+          <p class="class-card__title">${cls.title}. <span class="class-card__time">${cls.time}</span></p>
+          <p class="class-card__trainer">${cls.trainer}</p>
+        </div>
         <p class="class-card__badge"><span>Уровень подготовки:</span> ${cls.level}</p>
         <p class="class-card__badge"><span>Количество свободных мест:</span> ${cls.spots}</p>
         <button class="btn btn_red">Записаться</button>

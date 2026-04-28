@@ -1,71 +1,93 @@
+.subscription-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  padding: 2.4rem;
+}
 
-.subscription-cards{
+.subscription-card {
+  text-align: center;
+  box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.25);
+  border-radius: var(--border-radius);
+  padding: 1rem;
+}
+.subscription-card__img {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 0.7rem;
+}
+.subscription-card__title {
+  font-size: 1.6rem;
+  margin-bottom: 0.7rem;
+}
+.subscription-card__link {
+  text-decoration: none;
+  color: inherit;
+  opacity: 0.5;
+}
+.text-green {
+  color: var(--color-green-dark);
+}
+
+.visit-cards {
+  display: grid;
+  grid-template-columns: 1fr; /* мобильная версия — 1 колонка */
+  gap: 2.6rem;
+  margin-bottom: 2rem;
+}
+.visit-card {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.25);
+  background-color: var(--color-green-light);
+  border-radius: var(--border-radius);
+  padding: 3rem 1.5rem 1rem 1.5rem;
+  gap: 1.5rem;
+  height: 100%;
+}
+.visit-card__title {
+  text-align: center;
+  font-size: 2rem;
+}
+.visit-card__img {
+  width: 20px;
+  padding-top: 0.5rem;
+}
+.paragraph-wrapper {
+  display: flex;
+  gap: 2rem;
+  align-items: start;
+}
+.visit-card__price {
+  font-weight: bold;
+  text-align: center;
+  font-size: 2rem;
+}
+.line {
+  border-bottom: 1px solid var(--color-black);
+}
+
+@media (min-width: 768px) {
+}
+@media (min-width: 1280px) {
+  .subscription-cards {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .subscription-card {
+    padding: 2rem 1rem;
+    flex: 1;
+  }
+  .visit-cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .visit-cards > div {
     display: flex;
     flex-direction: column;
-    gap: 2.4rem;
-    padding: 2.4rem
-}
+  }
+  .visit-card {
+    flex: 1;
+  }
 
-.subscription-card{
-    text-align: center;
-    box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.25);
-    border-radius: var(--border-radius);
-    padding: 1rem;
+  
 }
-.subscription-card__img{
-    display: block;
-    margin: 0 auto;
-    margin-bottom: .7rem;
-}
-.subscription-card__title{
-    font-size: 1.6rem;
-    margin-bottom: .7rem;
-}
-.subscription-card__link{
-    text-decoration: none;
-    color: inherit;
-    opacity: .5;
-}
-.text-green{
-    color: var(--color-green-dark)
-}
-
-
-.visit-cards{
-    display: flex;
-    flex-direction: column;
-    gap: 2.6rem;
-}
-.visit-card{
-    display: flex;
-    flex-direction: column;
-    box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.25);
-    background-color: var(--color-green-light);
-    border-radius: var(--border-radius);
-    padding: 3rem 1.5rem 1rem 1.5rem;
-    gap: 1.5rem;
-}
-.visit-card__title{
-    text-align: center;
-    font-size: 2rem;
-}
-.visit-card__img{
-    width: 20px;
-    padding-top: .5rem;
-}
-.paragraph-wrapper{
-    display: flex;
-    gap:2rem;
-    align-items: start;
-}
-.visit-card__price{
-    font-weight: bold;
-    text-align: center;
-    font-size: 2rem;
-}
-.line{
-    border-bottom: 1px solid var(--color-black);
-}
-
-
-

@@ -173,3 +173,49 @@
   margin-bottom: 3rem;
   
 }
+
+@media (min-width: 768px) {
+  .selects{
+    justify-content: center;
+  }
+  .shedule-select{
+      width: 20rem;
+  }
+  .calendar{
+    max-width: 70rem;
+    margin: 0 auto;
+  }
+  .cell-inner {
+    width: 4rem;
+    height: 4rem;
+  }
+
+}
+
+@media (min-width: 1280px) {
+  .class-card{
+    display: flex;
+  }
+  .class-card__header{
+    display: flex;
+    align-items: center
+  }
+  .class-card__body{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 1rem;
+    gap: 1.7rem;
+  }
+  .class-card__badge{
+    font-size: 1.4rem;
+    align-self: end;
+    margin: 0;
+  }
+  .warning-card{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2.5rem;
+  }
+}
