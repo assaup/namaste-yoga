@@ -123,6 +123,7 @@
 .trainer-card__text{
     font-size: 1.4rem;
 }
+
 .trainer-card.active img {
     filter: grayscale(100%);
     opacity: .5; 
@@ -130,7 +131,15 @@
 .trainer-card.active .trainer-card__info{
     opacity: 1; 
 }
-
+@media (hover: hover) {
+  .trainer-card:hover img {
+    filter: grayscale(100%);
+    opacity: .5; 
+  }
+  .trainer-card:hover .trainer-card__info {
+    opacity: 1; 
+  }
+}
 
 /* Секция форма первого занятия */
 .section-form{

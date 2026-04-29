@@ -25,6 +25,9 @@
   color: inherit;
   opacity: 0.5;
 }
+.subscription-card__link:hover{
+  text-decoration: underline;
+}
 .text-green {
   color: var(--color-green-dark);
 }

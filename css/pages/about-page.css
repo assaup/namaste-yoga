@@ -40,10 +40,6 @@
   background-color: var(--color-green-light);
 }
 
-.link:hover {
-  color: var(--color-green-light);
-}
-
 /* секция 2 */
 .title-of-yoga-wrapper {
   margin-bottom: 4rem;

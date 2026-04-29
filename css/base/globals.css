@@ -49,6 +49,10 @@ main{
   color: inherit;
   text-decoration: none;
 }
+.link:hover {
+  color: var(--color-green-light);
+  text-decoration: underline;
+}
 
 @media (min-width: 768px) {
   html{

@@ -1,15 +1,18 @@
 // картинки тренеров
-document.querySelectorAll(".trainer-card").forEach((card) => {
-  card.addEventListener("click", function () {
-    const isActive = this.classList.contains("active");
-    document
-      .querySelectorAll(".trainer-card")
-      .forEach((c) => c.classList.remove("active"));
-    if (!isActive) {
-      this.classList.add("active");
-    }
+const cards = document.querySelectorAll(".trainer-card");
+const isHoverDevice = window.matchMedia("(hover: hover)").matches;
+
+if (!isHoverDevice) {
+  cards.forEach((card) => {
+    card.addEventListener("touchstart", function () {
+      const isActive = this.classList.contains("active");
+      cards.forEach((c) => c.classList.remove("active"));
+      if (!isActive) {
+        this.classList.add("active");
+      }
+    });
   });
-});
+}
 
 // бургер кнопка
 const burger = document.getElementById("burger");

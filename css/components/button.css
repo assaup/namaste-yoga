@@ -6,14 +6,24 @@
     padding: 1rem;
     border-radius: 1rem;
 }
+.btn:hover{
+    background-color: var(--color-white);
+    color: var(--color-green-dark)
+}
 .btn-action{
     border-radius: var(--border-radius);
 }
 .btn_red{
     border-radius: var(--border-radius);
+    border: 1px solid transparent;
     color: var(--color-white);
     background-color: var(--color-red);
     width: 50%;
+}
+.btn_red:hover{
+    background-color: var(--color-white);
+    color: var(--color-red);
+    border-color: var(--color-red);
 }
 
 @media (min-width: 768px) {

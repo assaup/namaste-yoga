@@ -148,8 +148,9 @@ body.no-scroll {
     margin: 0;
   }
   .full-menu__link:hover {
-  color: var(--color-green-dark);
-}
+    color: var(--color-green-dark);
+    text-decoration: underline;
+  }
 
   .full-menu__link {
     font-size: 1.6rem;
