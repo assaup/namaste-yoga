@@ -3,6 +3,12 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem 3rem;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
 }
 
 .burger {

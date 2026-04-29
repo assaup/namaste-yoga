@@ -11,3 +11,13 @@
     object-fit: cover;
     border-radius: var(--border-radius);
 }
+
+@media (min-width: 1280px){
+    .blog-container{
+        display: flex;
+        gap: 4rem
+    }
+    .image-blog{
+        width: 50%;
+    }
+}

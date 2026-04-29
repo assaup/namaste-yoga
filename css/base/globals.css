@@ -11,6 +11,9 @@ body{
   font-size: 1.6rem;
   color: var(--color-black)
 }
+main{
+  padding-top: 90px;
+}
 .container{
   width: 100%;
   min-width: 320px;

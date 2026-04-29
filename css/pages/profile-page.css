@@ -17,9 +17,11 @@
 .profile__data{
     color: var(--color-green-dark);
     margin-bottom: 1rem;
+    font-weight: bold;
 }
 .profile__value{
     color: var(--color-black);
+    font-weight: 400;
 }
 
 .my-subscription{
@@ -33,6 +35,64 @@
 .color-red{
     color: var(--color-red)
 }
-.date{
-    
+
+@media (min-width: 768px) {
+
+    .profile__img{
+        width: 30rem;
+        margin: 0 auto;
+        margin-bottom: 3rem;
+    }
+}
+
+@media (min-width: 1280px) {
+    .profile{
+        display: flex;
+        gap: 3rem;
+        padding-left: 7rem;
+        align-items: center;
+    }
+    .profile__img{
+        margin: 0;
+    }
+
+    .section-my-data {
+        display: flex;
+        justify-content: space-between;
+        gap: 3rem;
+        align-items: flex-start;
+    }
+
+    .my-subscription-box,
+    .my-appointments {
+        flex: 1;
+    }
+
+    .my-subscription {
+        text-align: start;
+        padding: 2rem;
+    }
+
+    .my-appointments .exercise-card {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 2rem;
+    }
+
+    .my-appointments .exercise-card__top-wrap {
+        flex: unset;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .my-appointments .exercise-card__right-wrap {
+        flex: unset;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .my-appointments .text-align-center {
+        flex-shrink: 0;
+    }
 }
