@@ -52,6 +52,44 @@
       <div class="container">
         <section class="section">
           <h1 class="title">Блог</h1>
+
+          <button class="btn btn__form" id="openBtn">
+            + Добавить статью
+          </button>
+
+          <form class="form-card" id="formCard">
+            <h3 class="form-title">Новая запись</h3>
+            <label class="form__label">
+              Заголовок
+              <input
+              class="form__input-login"
+                type="text"
+                id="fTitle"
+                placeholder="Введите заголовок..."
+              />
+            </label>
+
+            <label class="form__label">
+              Текст записи
+              <textarea
+              class="form__input-login"
+                id="fText"
+                placeholder="Напишите текст публикации..."
+              ></textarea>
+            </label>
+            <label class="form__label">
+              Изображение
+              <input type="file" id="fFile" class="form__input-login"/>
+            </label>
+
+            <div class="form-actions">
+              <button class="btn btn__form" id="submitBtn">Опубликовать</button>
+              <button class="btn btn__form" id="cancelBtn">Отмена</button>
+            </div>
+          </form>
+        </section>
+
+        <section class="section" id="blogSection">
           <div class="blog-container">
             <div class="blog-content">
               <h2 class="title-blog">Мастер-класс в студии «NAMASTE»</h2>
@@ -75,50 +113,55 @@
               alt=""
             />
           </div>
-        </section>
-        <section class="section blog-container">
-          <div class="blog-content">
-            <h2 class="title-blog">Открытие детской йоги</h2>
-            <p class="text-blog">Дата публикации: <span>16.09.2025</span></p>
-            <p class="text-blog">
-              В Москве прошёл масштабный фестиваль йоги, собравший практиков со
-              всей страны. Участники смогли познакомиться с разными
-              направлениями — от хатха-йоги до медитации и дыхательных техник.
-              На мероприятии выступили опытные преподаватели и приглашённые
-              мастера. Гости посещали открытые классы, лекции и практики на
-              свежем воздухе. Особое внимание уделялось осознанности и
-              восстановлению внутреннего баланса. Атмосфера была наполнена
-              спокойствием, вдохновением и поддержкой. Такие события помогают
-              углубить практику и найти единомышленников. Мы всегда рады
-              делиться подобным опытом с нашими учениками. Следите за новостями
-              — возможно, в следующий раз мы поедем вместе.
-            </p>
+
+          <div class="blog-container">
+            <div class="blog-content">
+              <h2 class="title-blog">Открытие детской йоги</h2>
+              <p class="text-blog">Дата публикации: <span>16.09.2025</span></p>
+              <p class="text-blog">
+                В Москве прошёл масштабный фестиваль йоги, собравший практиков
+                со всей страны. Участники смогли познакомиться с разными
+                направлениями — от хатха-йоги до медитации и дыхательных техник.
+                На мероприятии выступили опытные преподаватели и приглашённые
+                мастера. Гости посещали открытые классы, лекции и практики на
+                свежем воздухе. Особое внимание уделялось осознанности и
+                восстановлению внутреннего баланса. Атмосфера была наполнена
+                спокойствием, вдохновением и поддержкой. Такие события помогают
+                углубить практику и найти единомышленников. Мы всегда рады
+                делиться подобным опытом с нашими учениками. Следите за
+                новостями — возможно, в следующий раз мы поедем вместе.
+              </p>
+            </div>
+
+            <img
+              class="image-blog"
+              src="../img/about-page/exercise.jpg"
+              alt=""
+            />
           </div>
 
-          <img class="image-blog" src="../img/about-page/exercise.jpg" alt="" />
-        </section>
-        <section class="section blog-container">
-          <div class="blog-content">
-            <h2 class="title-blog">Фестиваль йоги в Москве</h2>
-            <p class="text-blog">Дата публикации: <span>20.02.2026</span></p>
-            <p class="text-blog">
-              Мы рады сообщить об открытии нового направления — йоги для детей
-              от 3 до 12 лет. Занятия будут проходить в игровой и безопасной
-              форме. Дети будут развивать гибкость, координацию и внимание.
-              Практики помогут улучшить осанку и общее самочувствие. Мы
-              используем мягкий подход, учитывая возрастные особенности. Занятия
-              способствуют снижению стресса и развитию уверенности. Наши
-              преподаватели имеют опыт работы с детьми. Атмосфера будет
-              дружелюбной и поддерживающей. Приглашаем ваших детей познакомиться
-              с йогой в лёгком и увлекательном формате.
-            </p>
-          </div>
+          <div class="blog-container">
+            <div class="blog-content">
+              <h2 class="title-blog">Фестиваль йоги в Москве</h2>
+              <p class="text-blog">Дата публикации: <span>20.02.2026</span></p>
+              <p class="text-blog">
+                Мы рады сообщить об открытии нового направления — йоги для детей
+                от 3 до 12 лет. Занятия будут проходить в игровой и безопасной
+                форме. Дети будут развивать гибкость, координацию и внимание.
+                Практики помогут улучшить осанку и общее самочувствие. Мы
+                используем мягкий подход, учитывая возрастные особенности.
+                Занятия способствуют снижению стресса и развитию уверенности.
+                Наши преподаватели имеют опыт работы с детьми. Атмосфера будет
+                дружелюбной и поддерживающей. Приглашаем ваших детей
+                познакомиться с йогой в лёгком и увлекательном формате.
+              </p>
+            </div>
 
-          <img class="image-blog" src="../img/about-page/exercise.jpg" alt="" />
-        </section>
-        <section class="section">
-          <div>
-            <button class="btn btn-action">Показать еще</button>
+            <img
+              class="image-blog"
+              src="../img/about-page/exercise.jpg"
+              alt=""
+            />
           </div>
         </section>
       </div>
@@ -211,3 +254,82 @@
     </footer>
   </body>
 </html>
+
+<script>
+  const openBtn = document.getElementById("openBtn");
+  const formCard = document.getElementById("formCard");
+  const cancelBtn = document.getElementById("cancelBtn");
+  const submitBtn = document.getElementById("submitBtn");
+  const fTitle = document.getElementById("fTitle");
+  const fText = document.getElementById("fText");
+  const fFile = document.getElementById("fFile");
+ const blogSection = document.getElementById("blogSection");
+
+  openBtn.addEventListener("click", () => {
+    formCard.classList.add("visible");
+    openBtn.style.display = "none";
+    fTitle.focus();
+  });
+
+  cancelBtn.addEventListener("click", resetForm);
+
+  function resetForm() {
+    formCard.classList.remove("visible");
+    openBtn.style.display = "inline-flex";
+    fTitle.value = "";
+    fText.value = "";
+    fFile.value = "";
+  }
+
+  function getFormattedDate() {
+    const today = new Date();
+    const d = String(today.getDate()).padStart(2, "0");
+    const m = String(today.getMonth() + 1).padStart(2, "0");
+    const y = today.getFullYear();
+    return `${d}.${m}.${y}`;
+  }
+
+  submitBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+
+    const title = fTitle.value.trim();
+    const text = fText.value.trim();
+
+    if (!title || !text) {
+      alert("Пожалуйста, заполните заголовок и текст записи.");
+      return;
+    }
+
+    const file = fFile.files[0];
+
+    function createCard(imageSrc) {
+      const card = document.createElement("div");
+      card.className = "blog-container";
+
+      card.innerHTML = `
+        <div class="blog-content">
+          <h2 class="title-blog">${title}</h2>
+          <p class="text-blog">Дата публикации: <span>${getFormattedDate()}</span></p>
+          <p class="text-blog">${text}</p>
+          <button class="btn btn__form btn-delete" style="margin-top: 12px;">Удалить</button>
+        </div>
+        <img class="image-blog" src="${imageSrc}" alt="" />
+      `;
+
+      card.querySelector(".btn-delete").addEventListener("click", () => {
+        card.remove();
+      });
+
+      blogSection.prepend(card);
+      resetForm();
+    }
+
+    if (file) {
+      const reader = new FileReader();
+      reader.onload = (e) => createCard(e.target.result);
+      reader.readAsDataURL(file);
+    } else {
+      createCard("../img/about-page/exercise.jpg");
+    }
+  });
+</script>

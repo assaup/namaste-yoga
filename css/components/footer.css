@@ -1,67 +1,65 @@
-footer{
-    background-color: var(--color-black);
-    color: var(--color-white);
+footer {
+  background-color: var(--color-black);
+  color: var(--color-white);
 }
-.footer-cont{
-    display: flex;
-    flex-direction: column;
-    gap: 4rem;
-    padding-block: 2.2rem;
+.footer-cont {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  padding-block: 2.2rem;
 }
-.footer-cont__top{
-    display: flex;
-    flex-direction: column;
-    gap: 4rem;
+.footer-cont__top {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
 }
-.footer__list{
+.footer__list {
+}
+.footer__title {
+  color: var(--color-green-light);
+  margin-bottom: 1.3rem;
+}
+.footer__item:not(:last-child) {
+  margin-bottom: 0.6rem;
+}
 
+.footer__line {
+  border-bottom: 2px solid var(--color-white);
 }
-.footer__title{
-    color: var(--color-green-light);
-    margin-bottom: 1.3rem;
+.footer__list-end {
+  margin-bottom: 2rem;
 }
-.footer__item:not(:last-child){
-    margin-bottom: .6rem;
+.footer__doc {
+  color: inherit;
 }
-
-.footer__line{
-    border-bottom: 2px solid var(--color-white);
+.footer__doc:hover {
+  color: var(--color-green-light);
+  text-decoration: underline;
 }
-.footer__list-end{
-    margin-bottom: 2rem;
-}
-.footer__doc{
-    color: inherit;
-}
-.footer__doc:hover{
-    color: var(--color-green-light);
-    text-decoration: underline;
-}
-.footer__networks{
-    display: flex;
-    gap: 3rem;
+.footer__networks {
+  display: flex;
+  gap: 3rem;
 }
 
 @media (min-width: 768px) {
-    .footer-cont{
-        padding-block: 5rem;
-        gap: 2rem;
-    }
-    .footer-cont__top{
-        gap: 1rem;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    .footer__end{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-    }
-    .footer__list-end{
-        display: flex;
-        flex-wrap: wrap;
-        gap: 2rem;
-        margin-bottom: 0;
-    }
+  .footer-cont {
+    padding-block: 5rem;
+    gap: 2rem;
+  }
+  .footer-cont__top {
+    gap: 1rem;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .footer__end {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer__list-end {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-bottom: 0;
+  }
 }
