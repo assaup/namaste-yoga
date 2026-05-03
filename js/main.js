@@ -106,6 +106,8 @@ function createCard(cls) {
           <p class="class-card__title">${cls.title}. <span class="class-card__time">${cls.time}</span></p>
           <p class="class-card__trainer">${cls.trainer}</p>
         </div>
+        <p class="class-card__badge"><span>Уровень подготовки:</span> ${cls.level}</p>
+        <p class="class-card__badge"><span>Количество свободных мест:</span> ${cls.spots}</p>
         <button class="btn btn_red js-book-btn" data-id="${cls.id}">
           ${isBooked ? 'Отменить' : 'Записаться'}
         </button>
