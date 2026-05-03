@@ -96,7 +96,7 @@
             <div class="line"></div>
             <p class="visit-card__price">1000руб</p>
             <div class="text-align-center">
-              <button class="btn btn_red">Купить</button>
+              <button class="btn btn_red btn-buy">Купить</button>
             </div>
           </div>
           <div class="visit-card">
@@ -112,7 +112,7 @@
             <div class="line"></div>
             <p class="visit-card__price">2500руб</p>
             <div class="text-align-center">
-              <button class="btn btn_red">Купить</button>
+              <button class="btn btn_red btn-buy">Купить</button>
             </div>
           </div>
           <div class="visit-card">
@@ -132,7 +132,7 @@
             <div class="line"></div>
             <p class="visit-card__price">2500руб</p>
             <div class="text-align-center">
-              <button class="btn btn_red">Купить</button>
+              <button class="btn btn_red btn-buy">Купить</button>
             </div>
           </div>
         </div>
@@ -151,7 +151,7 @@
               </div>
             </div>
             <div class="text-align-center">
-              <button class="btn btn_red">Купить</button>
+              <button class="btn btn_red btn-buy">Купить</button>
             </div>
           </div>
           <div class="exercise-card">
@@ -164,7 +164,7 @@
               </div>
             </div>
             <div class="text-align-center">
-              <button class="btn btn_red">Купить</button>
+              <button class="btn btn_red btn-buy">Купить</button>
             </div>
           </div>
           <div class="exercise-card">
@@ -177,7 +177,7 @@
               </div>
             </div>
             <div class="text-align-center">
-              <button class="btn btn_red">Купить</button>
+              <button class="btn btn_red btn-buy">Купить</button>
             </div>
           </div>
           <div class="exercise-card">
@@ -192,7 +192,7 @@
               </div>
             </div>
             <div class="text-align-center">
-              <button class="btn btn_red">Купить</button>
+              <button class="btn btn_red btn-buy">Купить</button>
             </div>
           </div>
           <div class="exercise-card">
@@ -207,7 +207,7 @@
               </div>
             </div>
             <div class="text-align-center">
-              <button class="btn btn_red">Купить</button>
+              <button class="btn btn_red btn-buy">Купить</button>
             </div>
           </div>
         </div>
@@ -224,7 +224,7 @@
               </div>
             </div>
             <div class="text-align-center">
-              <button class="btn btn_red">Купить</button>
+              <button class="btn btn_red btn-buy">Купить</button>
             </div>
           </div>
           <div class="exercise-card card-present">
@@ -236,7 +236,7 @@
               </div>
             </div>
             <div class="text-align-center">
-              <button class="btn btn_red">Купить</button>
+              <button class="btn btn_red btn-buy">Купить</button>
             </div>
           </div>
           <div class="exercise-card card-present">
@@ -248,7 +248,7 @@
               </div>
             </div>
             <div class="text-align-center">
-              <button class="btn btn_red">Купить</button>
+              <button class="btn btn_red btn-buy">Купить</button>
             </div>
           </div>
         </div>
@@ -274,6 +274,44 @@
         </iframe>
       </div>
     </section>
+    <div class="modal" id="modal">
+      <div class="modal__overlay" id="modal-overlay"></div>
+
+      <div class="modal__content">
+        <button class="modal__close" id="modal-close">×</button>
+
+        <h3 class="modal__title">Оформление покупки</h3>
+
+        <form class="modal__form" novalidate>
+          <label class="form__label">
+            Фамилия
+            <input type="text" class="form__input" placeholder="Туманова" />
+          </label>
+          <label class="form__label">
+            Имя
+            <input type="text" class="form__input" placeholder="Мария" />
+          </label>
+          <label class="form__label">
+            Телефон
+            <input type="tel" class="form__input" placeholder="+71234567890" />
+          </label>
+          <label class="form__label">
+            Почта
+            <input type="email" class="form__input" placeholder="example@mail.ru" />
+          </label>
+
+          <label class="form__container-agreement">
+            <input type="checkbox" class="form__checkbox" />
+            <span class="form__checkbox-box"></span>
+            <p>Согласен с условиями</p>
+          </label>
+          <div class="text-center">
+            <button class="btn btn_action" type="submit">Оплатить</button>
+
+          </div>
+        </form>
+      </div>
+    </div>
   </main>
   <footer class="footer">
     <div class="container footer-cont">
@@ -363,5 +401,140 @@
     </div>
   </footer>
 </body>
+<script>
+  const modal = document.getElementById('modal');
+  const overlay = document.getElementById('modal-overlay');
+  const closeBtn = document.getElementById('modal-close');
+
+  // все кнопки "Купить"
+  const buyButtons = document.querySelectorAll('.btn-buy');
+
+  buyButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      modal.classList.add('is-open');
+    });
+  });
+
+  // закрытие
+  function closeModal() {
+    modal.classList.remove('is-open');
+  }
+
+  overlay.addEventListener('click', closeModal);
+  closeBtn.addEventListener('click', closeModal);
+
+  const form = document.querySelector('.modal__form');
+    const status = document.createElement('p');
+    status.classList.add('form__status');
+    form.appendChild(status);
+
+    const inputs = {
+      lastName: form.querySelectorAll('input')[0],
+      firstName: form.querySelectorAll('input')[1],
+      phone: form.querySelectorAll('input')[2],
+      email: form.querySelectorAll('input')[3],
+      agreement: form.querySelector('.form__checkbox')
+    };
+
+    function validateLastName() {
+      if (inputs.lastName.value.trim().length < 2) {
+        inputs.lastName.classList.add('error');
+        return false;
+      }
+      inputs.lastName.classList.remove('error');
+      return true;
+    }
+
+    function validateFirstName() {
+      if (inputs.firstName.value.trim().length < 2) {
+        inputs.firstName.classList.add('error');
+        return false;
+      }
+      inputs.firstName.classList.remove('error');
+      return true;
+    }
+
+    function validatePhone() {
+      const phoneReg = /^\+?\d{10,15}$/;
+      if (!phoneReg.test(inputs.phone.value.trim())) {
+        inputs.phone.classList.add('error');
+        return false;
+      }
+      inputs.phone.classList.remove('error');
+      return true;
+    }
+
+    function validateEmail() {
+      const emailReg = /^\S+@\S+\.\S+$/;
+      if (!emailReg.test(inputs.email.value.trim())) {
+        inputs.email.classList.add('error');
+        return false;
+      }
+      inputs.email.classList.remove('error');
+      return true;
+    }
+
+    function validateAgreement() {
+      const box = inputs.agreement.closest('.form__container-agreement');
+
+      if (!inputs.agreement.checked) {
+        box.classList.add('error');
+        return false;
+      }
+
+      box.classList.remove('error');
+      return true;
+    }
+
+
+    inputs.lastName.addEventListener('blur', validateLastName);
+    inputs.firstName.addEventListener('blur', validateFirstName);
+    inputs.phone.addEventListener('blur', validatePhone);
+    inputs.email.addEventListener('blur', validateEmail);
+
+
+    Object.values(inputs).forEach(el => {
+      if (el.type !== 'checkbox') {
+        el.addEventListener('input', () => el.classList.remove('error'));
+      }
+    });
+
+    inputs.agreement.addEventListener('change', () => {
+      inputs.agreement.closest('.form__container-agreement')
+        .classList.remove('error');
+    });
+
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+
+      const isValid =
+        validateLastName() &&
+        validateFirstName() &&
+        validatePhone() &&
+        validateEmail() &&
+        validateAgreement();
+
+      showMessage(isValid);
+    });
+
+
+    function showMessage(success) {
+      status.textContent = success
+        ? ''
+        : 'Проверьте форму';
+
+      status.style.color = success ? 'green' : 'red';
+
+      setTimeout(() => {
+        status.textContent = '';
+      }, 2000);
+
+      if (success) {
+        form.reset();
+        closeModal();
+      }
+    }
+</script>
 
 </html>

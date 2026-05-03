@@ -8,6 +8,7 @@
 @import url("./components/header.css");
 @import url("./components/footer.css");
 @import url("./components/exercise-card.css");
+@import url("./components/modal.css");
 
 @import url("./pages/main-page.css");
 @import url("./pages/about-page.css");

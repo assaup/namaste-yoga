@@ -1,0 +1,70 @@
+.modal {
+  position: fixed;
+  inset: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal.is-open {
+  display: flex;
+}
+
+.modal__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+}
+
+.modal__content {
+  position: relative;
+    background:
+    linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../../img/subscription-page/modal.jpg) no-repeat center / cover;
+  padding: 6rem 4rem;
+  border-radius: var(--border-radius);
+  color: var(--color-white);
+  z-index: 1;
+  width: 90%;
+  max-width: 400px;
+  height: 700px;
+}
+.modal__title{
+    font-size: 2.4rem;
+    text-align: center;
+    letter-spacing: 1.2px;
+    margin-bottom: 2rem;
+    
+}
+
+.modal__close {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  border: none;
+  color: var(--color-white);
+  background: none;
+  font-size: 4rem;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    .modal__content{
+        max-width: 530px;
+        padding: 2rem 3rem;
+    }
+}
+.error {
+  outline: 2px solid red;
+}
+
+.form__container-agreement.error .form__checkbox-box {
+  border-color: red;
+}
+
+.form__status {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 1.4rem;
+}
