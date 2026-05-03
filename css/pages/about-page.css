@@ -44,9 +44,8 @@
 .title-of-yoga-wrapper {
   margin-bottom: 4rem;
   text-align: center;
-
 }
-.title-of-yoga{
+.title-of-yoga {
   font-family: "Ruthless Sketch";
   font-size: 4.8rem;
   color: var(--color-black);
@@ -66,63 +65,57 @@
 }
 
 @media (min-width: 768px) {
-  .about__content{
+  .about__content {
     padding: 6rem 10rem;
   }
-  .title-of-yoga{
+  .title-of-yoga {
     display: inline-block;
     padding-inline: clamp(5rem, 10vw, 10rem);
   }
-  .yoga-image-hatha{
+  .yoga-image-hatha {
     width: 100%;
     max-height: 33rem;
     object-fit: cover;
     object-position: bottom;
   }
 
-  .vinyasa-content{
+  .vinyasa-content {
     display: flex;
     gap: 2rem;
   }
-  .yoga-text-left{
+  .yoga-text-left {
     text-align: left;
     width: 50%;
     padding-top: 5rem;
   }
-  .yoga-image-vinyasa{
+  .yoga-image-vinyasa {
     width: 50%;
     object-fit: cover;
     object-position: 60%;
   }
 
-  .strong-yoga-content{
+  .strong-yoga-content {
     display: flex;
     gap: 2rem;
     flex-direction: row-reverse;
   }
-  .yoga-text-right{
+  .yoga-text-right {
     text-align: right;
     padding-top: 5rem;
   }
-
-  
-  
 }
 @media (min-width: 1280px) {
-  .types-of-yoga__text{
+  .types-of-yoga__text {
     width: 50%;
   }
-  .types-of-yoga{
+  .types-of-yoga {
     padding-left: 8rem;
   }
-  .yoga-text-center{
+  .yoga-text-center {
     padding-inline: 13rem;
   }
-  .vinyasa-content, .strong-yoga-content{
+  .vinyasa-content,
+  .strong-yoga-content {
     gap: 10rem;
   }
-  
-  
-  
-
 }

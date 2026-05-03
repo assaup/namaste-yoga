@@ -25,7 +25,7 @@
   color: inherit;
   opacity: 0.5;
 }
-.subscription-card__link:hover{
+.subscription-card__link:hover {
   text-decoration: underline;
 }
 .text-green {
@@ -91,6 +91,4 @@
   .visit-card {
     flex: 1;
   }
-
-  
 }

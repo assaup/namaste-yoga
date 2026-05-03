@@ -1,451 +1,372 @@
 <!doctype html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Namaste</title>
-    <link rel="stylesheet" href="css/main.css" />
-    <script src="js/main.js" defer></script>
-  </head>
-  <body>
-    <header class="header">
-      <div class="logo">
-        <img src="./img/logo.svg" alt="Логотип" />
-      </div>
 
-      <nav class="full-menu" id="full-menu">
-        <div class="logo logo--menu">
-          <img src="./img/logo-white.svg" alt="Логотип" class="logo-white" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Namaste</title>
+  <link rel="stylesheet" href="css/main.css" />
+  <script src="js/main.js" defer></script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="logo">
+      <img src="./img/logo.svg" alt="Логотип" />
+    </div>
+
+    <nav class="full-menu" id="full-menu">
+      <div class="logo logo--menu">
+        <img src="./img/logo-white.svg" alt="Логотип" class="logo-white" />
+      </div>
+      <ul class="full-menu__list">
+        <li><a class="full-menu__link hidden" href="./pages/profile.html">Личный кабинет</a></li>
+        <li><a class="full-menu__link" href="/">Главная</a></li>
+        <li><a class="full-menu__link" href="./pages/about.html">Йога</a></li>
+        <li>
+          <a class="full-menu__link" href="./pages/shedule.html">Расписание</a>
+        </li>
+        <li>
+          <a class="full-menu__link" href="./pages/subscription.html">Абонементы</a>
+        </li>
+        <li><a class="full-menu__link" href="./pages/blog.html">Блог</a></li>
+      </ul>
+    </nav>
+
+    <button class="burger" id="burger">
+      <span class="burger__line"></span>
+      <span class="burger__line"></span>
+      <span class="burger__line"></span>
+    </button>
+
+    <a href="./pages/profile.html" class="btn__login">
+      <img src="./img/profile.svg" alt="" />
+    </a>
+  </header>
+  <main>
+    <section class="section section-main">
+      <div class="container main">
+        <h1 class="main__name">Namaste</h1>
+        <strong class="main__title">Позволь своему телу раскрыться по-новому</strong>
+        <p class="main__text">
+          Студия йоги в Москве, где тебя ждут новые возможности и лучшие
+          тренера
+        </p>
+        <button class="btn">Начни сейчас →</button>
+      </div>
+    </section>
+    <div class="container">
+      <section class="section section-about">
+        <div class="section-about__right">
+          <h2 class="title">О нас</h2>
+          <p class="about__text">
+            Мы — современная студия йоги, где практика доступна людям с любым
+            уровнем подготовки. Наша команда состоит из сертифицированных
+            преподавателей, которые помогают безопасно и постепенно развивать
+            силу, гибкость и баланс.
+          </p>
+          <p class="about__text-2">
+            В студии проходят регулярные групповые занятия, индивидуальные
+            практики и классы для начинающих. Мы создали спокойное и
+            комфортное пространство, где можно отвлечься от повседневной суеты
+            и сосредоточиться на себе. Наша цель — сделать йогу естественной
+            частью здорового и гармоничного образа жизни.
+          </p>
         </div>
-        <ul class="full-menu__list">
-          <li><a class="full-menu__link" href="/">Главная</a></li>
-          <li><a class="full-menu__link" href="./pages/about.html">Йога</a></li>
-          <li>
-            <a class="full-menu__link" href="./pages/shedule.html"
-              >Расписание</a
-            >
-          </li>
-          <li>
-            <a class="full-menu__link" href="./pages/subscription.html"
-              >Абонементы</a
-            >
-          </li>
-          <li><a class="full-menu__link" href="./pages/blog.html">Блог</a></li>
+        <div class="img-wrapper">
+          <img src="./img/about-img.jpg" alt="" />
+        </div>
+      </section>
+      <section class="section advantages">
+        <h2 class="title">Почему именно мы</h2>
+        <div class="advantages__cont">
+          <div class="advantage">
+            <img src="./img/advantage/friends.svg" alt="" class="advantage__img" />
+            <p class="advantage__text">
+              Опытные и внимательные преподаватели
+            </p>
+          </div>
+          <div class="advantage">
+            <img src="./img/advantage/men.svg" alt="" class="advantage__img" />
+            <p class="advantage__text">
+              Подходит для любого уровня подготовки
+            </p>
+          </div>
+          <div class="advantage">
+            <img src="./img/advantage/sun.svg" alt="" class="advantage__img" />
+            <p class="advantage__text">
+              Пространство для расслабления и восстановления
+            </p>
+          </div>
+          <div class="advantage">
+            <img src="./img/advantage/paper.svg" alt="" class="advantage__img" />
+            <p class="advantage__text">
+              Разнообразные тренировки и гибкое расписание
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <h2 class="title">Наши тренера</h2>
+        <div class="trainers">
+          <div class="trainer-card">
+            <img class="trainer-card__img" src="./img/couch/image.jpg" alt="" />
+            <div class="trainer-card__info">
+              <h3 class="trainer-card__title">Александр Жуков</h3>
+              <p class="trainer-card__text">
+                Преподаватель хатха-йоги с опытом более 7 лет
+              </p>
+            </div>
+          </div>
+          <div class="trainer-card">
+            <img class="trainer-card__img" src="./img/couch/image-Photoroom-14.png" alt="" />
+            <div class="trainer-card__info">
+              <h3 class="trainer-card__title">Анна Салацкая</h3>
+              <p class="trainer-card__text">
+                Преподаватель йоги для начинающих и детей
+              </p>
+            </div>
+          </div>
+          <div class="trainer-card">
+            <img class="trainer-card__img" src="./img/couch/image-Photoroom-15.png" alt="" />
+            <div class="trainer-card__info">
+              <h3 class="trainer-card__title">Кристина Решетова</h3>
+              <p class="trainer-card__text">Инструктор силовой йоги</p>
+            </div>
+          </div>
+          <div class="trainer-card">
+            <img class="trainer-card__img" src="./img/couch/image-Photoroom-16.png" alt="" />
+            <div class="trainer-card__info">
+              <h3 class="trainer-card__title">Степан Кузьмин</h3>
+              <p class="trainer-card__text">
+                Йога-терапевт, работа со спиной и стрессом
+              </p>
+            </div>
+          </div>
+          <div class="trainer-card">
+            <img class="trainer-card__img" src="./img/couch/image-Photoroom-17.png" alt="" />
+            <div class="trainer-card__info">
+              <h3 class="trainer-card__title">Алина Сельчук</h3>
+              <p class="trainer-card__text">
+                Инструктор виньяса-йоги, развитие силы и гибкости
+              </p>
+            </div>
+          </div>
+          <div class="trainer-card">
+            <img class="trainer-card__img" src="./img/couch/image-Photoroom-18.png" alt="" />
+            <div class="trainer-card__info">
+              <h3 class="trainer-card__title">Маргарита Шевчук</h3>
+              <p class="trainer-card__text">
+                Специалист по пранаяме и медитации с десятилетним стажем
+              </p>
+            </div>
+          </div>
+          <div class="trainer-card">
+            <img class="trainer-card__img" src="./img/couch/image-Photoroom-19.png" alt="" />
+            <div class="trainer-card__info">
+              <h3 class="trainer-card__title">Ассауп Данис</h3>
+              <p class="trainer-card__text">
+                Детский тренер по йоге с упором на баланс и координацию
+              </p>
+            </div>
+          </div>
+          <div class="trainer-card">
+            <img class="trainer-card__img" src="./img/couch/image-Photoroom-20.png" alt="" />
+            <div class="trainer-card__info">
+              <h3 class="trainer-card__title">Зарина Ахметова</h3>
+              <p class="trainer-card__text">
+                Преподаватель утренних энерго-практик
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <section class="section section-form">
+      <div class="container">
+        <h2 class="form__title">Записаться на вводное занятие</h2>
+        <p class="form__text">
+          Попробуйте себя в мире йоги всего за 1000 руб.
+        </p>
+        <form class="form">
+          <label class="form__label">
+            ФИО
+            <input type="text" class="form__input" placeholder="Иванова Анна Ивановна" />
+          </label>
+          <label class="form__label">
+            Почта
+            <input type="text" class="form__input" placeholder="example@mail.ru" />
+          </label>
+          <label class="form__label">
+            Дополнительная информация
+            <textarea class="form__textarea form__input" placeholder="Введите сообщение"></textarea>
+          </label>
+          <label class="form__container-agreement">
+            <input class="form__checkbox" type="checkbox" name="agreement" />
+            <span class="form__checkbox-box"></span>
+            <p>
+              Принимаю условия
+              <a class="form__link-agreement" href="#">пользовательского соглашения</a>
+            </p>
+          </label>
+          <button class="btn btn-action" type="submit">Записаться</button>
+        </form>
+      </div>
+    </section>
+    <div class="container">
+      <section class="section section-review">
+        <h2 class="title">Отзывы о нас</h2>
+        <div class="reviews">
+          <div class="review">
+            <div class="review__top-wrapper">
+              <img src="./img/smile-review.svg" alt="" class="review__smile" />
+              <div class="review__grade">
+                <p class="review__stars">★★★★★</p>
+                <p class="review__client">Ксения Д.</p>
+              </div>
+            </div>
+            <p>
+              Очень уютная студия и внимательные преподаватели. Хочется
+              возвращаться снова.
+            </p>
+          </div>
+          <div class="review">
+            <div class="review__top-wrapper">
+              <img src="./img/smile-review.svg" alt="" class="review__smile" />
+              <div class="review__grade">
+                <p class="review__stars">★★★★★</p>
+                <p class="review__client">Анна С.</p>
+              </div>
+            </div>
+            <p>
+              Занятия помогают расслабиться и почувствовать тело. Отличная
+              атмосфера.
+            </p>
+          </div>
+          <div class="review">
+            <div class="review__top-wrapper">
+              <img src="./img/smile-review.svg" alt="" class="review__smile" />
+              <div class="review__grade">
+                <p class="review__stars">★★★★★</p>
+                <p class="review__client">Полина С.</p>
+              </div>
+            </div>
+            <p>
+              Очень комфортные группы и внимание к каждому ученику.
+              Рекомендую.
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+    <section class="section-contacts">
+      <div class="container contacts">
+        <ul class="contact-list">
+          <h3 class="contact-title">Адрес:</h3>
+          <li>Москва, Большая Семёновская ул., 38</li>
+          <li>Студия йоги “NAMASTE”</li>
         </ul>
-      </nav>
+        <ul class="contact-list">
+          <h3 class="contact-title">Контакты:</h3>
+          <li>NUM: +7 (495) 223-05-23</li>
+          <li>TG: @NAMASTEYOGA</li>
+          <li>MAIL: NAMASTEYOGA@MAIL.RU</li>
+        </ul>
+      </div>
+      <div class="map-wrapper">
+        <iframe src="https://yandex.ru/map-widget/v1/?ll=37.712398%2C55.781358&z=17&pt=37.712398%2C55.781358,pm2blm"
+          width="100%" height="450" frameborder="0" allowfullscreen="true">
+        </iframe>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container footer-cont">
+      <div class="footer-cont__top">
+        <a href="/">
+          <img src="./img/logo-white.svg" alt="logo" />
+        </a>
+        <div class="footer__block">
+          <h3 class="footer__title">Навигация</h3>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a class="link" href="/">Главная</a>
+            </li>
+            <li class="footer__item">
+              <a class="link" href="./pages/shedule.html">Расписание</a>
+            </li>
+            <li class="footer__item">
+              <a class="link" href="./pages/subscription.html">Абонементы</a>
+            </li>
+            <li class="footer__item">
+              <a class="link" href="./pages/about.html">Йога</a>
+            </li>
+            <li class="footer__item">
+              <a class="link" href="./pages/blog.html">Блог</a>
+            </li>
+            <li class="footer__item">
+              <a class="link" href="./pages/profile.html">Личный кабинет</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__block">
+          <h3 class="footer__title">Ресурсы</h3>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a class="link" href="#">Карьера</a>
+            </li>
+            <li class="footer__item">
+              <a class="link" href="#">Реклама</a>
+            </li>
+            <li class="footer__item">
+              <a class="link" href="#">Волонтерство</a>
+            </li>
+            <li class="footer__item">
+              <a class="link" href="#">Работа</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__block">
+          <h3 class="footer__title">Пользователям</h3>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a class="link" href="#">Поддержка</a>
+            </li>
+            <li class="footer__item">
+              <a class="link" href="#">FAQ</a>
+            </li>
+            <li class="footer__item">
+              <a class="link" href="#">Документация</a>
+            </li>
+            <li class="footer__item">
+              <a class="link" href="#">Партнеры</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__line"></div>
+      <div class="footer__end">
+        <ul class="footer__list-end">
+          <li class="footer__item">
+            <a class="footer__doc" href="#">2026, Moscow Polytechnic University</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__doc" href="#">Privacy Policy</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__doc" href="#">Terms of Service</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__doc" href="#">Cookies Settings</a>
+          </li>
+        </ul>
+        <div class="footer__networks">
+          <img src="./img/vk.svg" alt="" class="network-icon" />
+          <img src="./img/tg.svg" alt="" class="network-icon" />
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
 
-      <button class="burger" id="burger">
-        <span class="burger__line"></span>
-        <span class="burger__line"></span>
-        <span class="burger__line"></span>
-      </button>
-
-      <a href="./pages/profile.html" class="btn__login">
-        <img src="./img/profile.svg" alt="" />
-      </a>
-    </header>
-    <main>
-      <section class="section section-main">
-        <div class="container main">
-          <h1 class="main__name">Namaste</h1>
-          <strong class="main__title"
-            >Позволь своему телу раскрыться по-новому</strong
-          >
-          <p class="main__text">
-            Студия йоги в Москве, где тебя ждут новые возможности и лучшие
-            тренера
-          </p>
-          <button class="btn">Начни сейчас →</button>
-        </div>
-      </section>
-      <div class="container">
-        <section class="section section-about">
-          <div class="section-about__right">
-            <h2 class="title">О нас</h2>
-            <p class="about__text">
-              Мы — современная студия йоги, где практика доступна людям с любым
-              уровнем подготовки. Наша команда состоит из сертифицированных
-              преподавателей, которые помогают безопасно и постепенно развивать
-              силу, гибкость и баланс.
-            </p>
-            <p class="about__text-2">
-              В студии проходят регулярные групповые занятия, индивидуальные
-              практики и классы для начинающих. Мы создали спокойное и
-              комфортное пространство, где можно отвлечься от повседневной суеты
-              и сосредоточиться на себе. Наша цель — сделать йогу естественной
-              частью здорового и гармоничного образа жизни.
-            </p>
-          </div>
-          <div class="img-wrapper">
-            <img src="./img/about-img.jpg" alt="" />
-          </div>
-        </section>
-        <section class="section advantages">
-          <h2 class="title">Почему именно мы</h2>
-          <div class="advantages__cont">
-            <div class="advantage">
-              <img
-                src="./img/advantage/friends.svg"
-                alt=""
-                class="advantage__img"
-              />
-              <p class="advantage__text">
-                Опытные и внимательные преподаватели
-              </p>
-            </div>
-            <div class="advantage">
-              <img
-                src="./img/advantage/men.svg"
-                alt=""
-                class="advantage__img"
-              />
-              <p class="advantage__text">
-                Подходит для любого уровня подготовки
-              </p>
-            </div>
-            <div class="advantage">
-              <img
-                src="./img/advantage/sun.svg"
-                alt=""
-                class="advantage__img"
-              />
-              <p class="advantage__text">
-                Пространство для расслабления и восстановления
-              </p>
-            </div>
-            <div class="advantage">
-              <img
-                src="./img/advantage/paper.svg"
-                alt=""
-                class="advantage__img"
-              />
-              <p class="advantage__text">
-                Разнообразные тренировки и гибкое расписание
-              </p>
-            </div>
-          </div>
-        </section>
-        <section class="section">
-          <h2 class="title">Наши тренера</h2>
-          <div class="trainers">
-            <div class="trainer-card">
-              <img
-                class="trainer-card__img"
-                src="./img/couch/image.jpg"
-                alt=""
-              />
-              <div class="trainer-card__info">
-                <h3 class="trainer-card__title">Александр Жуков</h3>
-                <p class="trainer-card__text">
-                  Преподаватель хатха-йоги с опытом более 7 лет
-                </p>
-              </div>
-            </div>
-            <div class="trainer-card">
-              <img
-                class="trainer-card__img"
-                src="./img/couch/image-Photoroom-14.png"
-                alt=""
-              />
-              <div class="trainer-card__info">
-                <h3 class="trainer-card__title">Анна Салацкая</h3>
-                <p class="trainer-card__text">
-                  Преподаватель йоги для начинающих и детей
-                </p>
-              </div>
-            </div>
-            <div class="trainer-card">
-              <img
-                class="trainer-card__img"
-                src="./img/couch/image-Photoroom-15.png"
-                alt=""
-              />
-              <div class="trainer-card__info">
-                <h3 class="trainer-card__title">Кристина Решетова</h3>
-                <p class="trainer-card__text">Инструктор силовой йоги</p>
-              </div>
-            </div>
-            <div class="trainer-card">
-              <img
-                class="trainer-card__img"
-                src="./img/couch/image-Photoroom-16.png"
-                alt=""
-              />
-              <div class="trainer-card__info">
-                <h3 class="trainer-card__title">Степан Кузьмин</h3>
-                <p class="trainer-card__text">
-                  Йога-терапевт, работа со спиной и стрессом
-                </p>
-              </div>
-            </div>
-            <div class="trainer-card">
-              <img
-                class="trainer-card__img"
-                src="./img/couch/image-Photoroom-17.png"
-                alt=""
-              />
-              <div class="trainer-card__info">
-                <h3 class="trainer-card__title">Алина Сельчук</h3>
-                <p class="trainer-card__text">
-                  Инструктор виньяса-йоги, развитие силы и гибкости
-                </p>
-              </div>
-            </div>
-            <div class="trainer-card">
-              <img
-                class="trainer-card__img"
-                src="./img/couch/image-Photoroom-18.png"
-                alt=""
-              />
-              <div class="trainer-card__info">
-                <h3 class="trainer-card__title">Маргарита Шевчук</h3>
-                <p class="trainer-card__text">
-                  Специалист по пранаяме и медитации с десятилетним стажем
-                </p>
-              </div>
-            </div>
-            <div class="trainer-card">
-              <img
-                class="trainer-card__img"
-                src="./img/couch/image-Photoroom-19.png"
-                alt=""
-              />
-              <div class="trainer-card__info">
-                <h3 class="trainer-card__title">Ассауп Данис</h3>
-                <p class="trainer-card__text">
-                  Детский тренер по йоге с упором на баланс и координацию
-                </p>
-              </div>
-            </div>
-            <div class="trainer-card">
-              <img
-                class="trainer-card__img"
-                src="./img/couch/image-Photoroom-20.png"
-                alt=""
-              />
-              <div class="trainer-card__info">
-                <h3 class="trainer-card__title">Зарина Ахметова</h3>
-                <p class="trainer-card__text">
-                  Преподаватель утренних энерго-практик
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-      </div>
-      <section class="section section-form">
-        <div class="container">
-          <h2 class="form__title">Записаться на вводное занятие</h2>
-          <p class="form__text">
-            Попробуйте себя в мире йоги всего за 1000 руб.
-          </p>
-          <form class="form">
-            <label class="form__label">
-              ФИО
-              <input
-                type="text"
-                class="form__input"
-                placeholder="Иванова Анна Ивановна"
-              />
-            </label>
-            <label class="form__label">
-              Почта
-              <input
-                type="text"
-                class="form__input"
-                placeholder="example@mail.ru"
-              />
-            </label>
-            <label class="form__label">
-              Дополнительная информация
-              <textarea
-                class="form__textarea form__input"
-                placeholder="Введите сообщение"
-              ></textarea>
-            </label>
-            <label class="form__container-agreement">
-              <input class="form__checkbox" type="checkbox" name="agreement" />
-              <span class="form__checkbox-box"></span>
-              <p>
-                Принимаю условия
-                <a class="form__link-agreement" href="#"
-                  >пользовательского соглашения</a
-                >
-              </p>
-            </label>
-            <button class="btn btn-action" type="submit">Записаться</button>
-          </form>
-        </div>
-      </section>
-      <div class="container">
-        <section class="section section-review">
-          <h2 class="title">Отзывы о нас</h2>
-          <div class="reviews">
-            <div class="review">
-              <div class="review__top-wrapper">
-                <img
-                  src="./img/smile-review.svg"
-                  alt=""
-                  class="review__smile"
-                />
-                <div class="review__grade">
-                  <p class="review__stars">★★★★★</p>
-                  <p class="review__client">Ксения Д.</p>
-                </div>
-              </div>
-              <p>
-                Очень уютная студия и внимательные преподаватели. Хочется
-                возвращаться снова.
-              </p>
-            </div>
-            <div class="review">
-              <div class="review__top-wrapper">
-                <img
-                  src="./img/smile-review.svg"
-                  alt=""
-                  class="review__smile"
-                />
-                <div class="review__grade">
-                  <p class="review__stars">★★★★★</p>
-                  <p class="review__client">Анна С.</p>
-                </div>
-              </div>
-              <p>
-                Занятия помогают расслабиться и почувствовать тело. Отличная
-                атмосфера.
-              </p>
-            </div>
-            <div class="review">
-              <div class="review__top-wrapper">
-                <img
-                  src="./img/smile-review.svg"
-                  alt=""
-                  class="review__smile"
-                />
-                <div class="review__grade">
-                  <p class="review__stars">★★★★★</p>
-                  <p class="review__client">Полина С.</p>
-                </div>
-              </div>
-              <p>
-                Очень комфортные группы и внимание к каждому ученику.
-                Рекомендую.
-              </p>
-            </div>
-          </div>
-        </section>
-      </div>
-      <section class="section-contacts">
-        <div class="container contacts">
-          <ul class="contact-list">
-            <h3 class="contact-title">Адрес:</h3>
-            <li>Москва, Большая Семёновская ул., 38</li>
-            <li>Студия йоги “NAMASTE”</li>
-          </ul>
-          <ul class="contact-list">
-            <h3 class="contact-title">Контакты:</h3>
-            <li>NUM: +7 (495) 223-05-23</li>
-            <li>TG: @NAMASTEYOGA</li>
-            <li>MAIL: NAMASTEYOGA@MAIL.RU</li>
-          </ul>
-        </div>
-        <div class="map-wrapper">
-          <iframe
-            src="https://yandex.ru/map-widget/v1/?ll=37.712398%2C55.781358&z=17&pt=37.712398%2C55.781358,pm2blm"
-            width="100%"
-            height="450"
-            frameborder="0"
-            allowfullscreen="true"
-          >
-          </iframe>
-        </div>
-      </section>
-    </main>
-    <footer class="footer">
-      <div class="container footer-cont">
-        <div class="footer-cont__top">
-          <a href="/">
-            <img src="./img/logo-white.svg" alt="logo" />
-          </a>
-          <div class="footer__block">
-            <h3 class="footer__title">Главная</h3>
-            <ul class="footer__list">
-              <li class="footer__item">
-                <a class="link" href="./pages/shedule.html">Расписание</a>
-              </li>
-              <li class="footer__item">
-                <a class="link" href="./pages/subscription.html">Абонементы</a>
-              </li>
-              <li class="footer__item">
-                <a class="link" href="./pages/about.html">Йога</a>
-              </li>
-              <li class="footer__item">
-                <a class="link" href="./pages/blog.html">Блог</a>
-              </li>
-              <li class="footer__item">
-                <a class="link" href="./pages/profile.html">Личный кабинет</a>
-              </li>
-            </ul>
-          </div>
-          <div class="footer__block">
-            <h3 class="footer__title">Ресурсы</h3>
-            <ul class="footer__list">
-              <li class="footer__item">
-                <a class="link" href="#">Карьера</a>
-              </li>
-              <li class="footer__item">
-                <a class="link" href="#">Реклама</a>
-              </li>
-              <li class="footer__item">
-                <a class="link" href="#">Волонтерство</a>
-              </li>
-              <li class="footer__item">
-                <a class="link" href="#">Работа</a>
-              </li>
-            </ul>
-          </div>
-          <div class="footer__block">
-            <h3 class="footer__title">Пользователям</h3>
-            <ul class="footer__list">
-              <li class="footer__item">
-                <a class="link" href="#">Поддержка</a>
-              </li>
-              <li class="footer__item">
-                <a class="link" href="#">FAQ</a>
-              </li>
-              <li class="footer__item">
-                <a class="link" href="#">Документация</a>
-              </li>
-              <li class="footer__item">
-                <a class="link" href="#">Партнеры</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="footer__line"></div>
-        <div class="footer__end">
-          <ul class="footer__list-end">
-            <li class="footer__item">
-              <a class="footer__doc" href="#"
-                >2026, Moscow Polytechnic University</a
-              >
-            </li>
-            <li class="footer__item">
-              <a class="footer__doc" href="#">Privacy Policy</a>
-            </li>
-            <li class="footer__item">
-              <a class="footer__doc" href="#">Terms of Service</a>
-            </li>
-            <li class="footer__item">
-              <a class="footer__doc" href="#">Cookies Settings</a>
-            </li>
-          </ul>
-          <div class="footer__networks">
-            <img src="./img/vk.svg" alt="" class="network-icon" />
-            <img src="./img/tg.svg" alt="" class="network-icon" />
-          </div>
-        </div>
-      </div>
-    </footer>
-  </body>
 </html>

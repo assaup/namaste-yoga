@@ -1,98 +1,95 @@
-.profile{
-    padding: 3rem;
-    border-radius: var(--border-radius);
-    box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.25);
-    
+.profile {
+  padding: 3rem;
+  border-radius: var(--border-radius);
+  box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.25);
 }
-.profile__img{
-    border-radius: var(--border-radius);
+.profile__img {
+  border-radius: var(--border-radius);
 }
-.profile__name{
-    font-size: 4.8rem;
-    font-weight: bold;
-    line-height: 1.2;
-    margin-bottom: 1rem;
-
+.profile__name {
+  font-size: 4.8rem;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: 1rem;
 }
-.profile__data{
-    color: var(--color-green-dark);
-    margin-bottom: 1rem;
-    font-weight: bold;
+.profile__data {
+  color: var(--color-green-dark);
+  margin-bottom: 1rem;
+  font-weight: bold;
 }
-.profile__value{
-    color: var(--color-black);
-    font-weight: 400;
+.profile__value {
+  color: var(--color-black);
+  font-weight: 400;
 }
 
-.my-subscription{
-    background-color: var(--color-green-light);
-    border-radius: var(--border-radius);
-    box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.25);
-    text-align: center;
-    padding-block: 1.6rem;
+.my-subscription {
+  background-color: var(--color-green-light);
+  border-radius: var(--border-radius);
+  box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  padding-block: 1.6rem;
 }
 
-.color-red{
-    color: var(--color-red)
+.color-red {
+  color: var(--color-red);
 }
 
 @media (min-width: 768px) {
-
-    .profile__img{
-        width: 30rem;
-        margin: 0 auto;
-        margin-bottom: 3rem;
-    }
+  .profile__img {
+    width: 30rem;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+  }
 }
 
 @media (min-width: 1280px) {
-    .profile{
-        display: flex;
-        gap: 3rem;
-        padding-left: 7rem;
-        align-items: center;
-    }
-    .profile__img{
-        margin: 0;
-    }
+  .profile {
+    display: flex;
+    gap: 3rem;
+    padding-left: 7rem;
+    align-items: center;
+  }
+  .profile__img {
+    margin: 0;
+  }
 
-    .section-my-data {
-        display: flex;
-        justify-content: space-between;
-        gap: 3rem;
-        align-items: flex-start;
-    }
+  .section-my-data {
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+    align-items: flex-start;
+  }
 
-    .my-subscription-box,
-    .my-appointments {
-        flex: 1;
-    }
+  .my-subscription-box,
+  .my-appointments {
+    flex: 1;
+  }
 
-    .my-subscription {
-        text-align: start;
-        padding: 2rem;
-    }
+  .my-subscription {
+    text-align: start;
+    padding: 2rem;
+  }
 
-    .my-appointments .exercise-card {
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        margin-bottom: 2rem;
-    }
+  .my-appointments .exercise-card {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+  }
 
-    .my-appointments .exercise-card__top-wrap {
-        flex: unset;
-        justify-content: flex-start;
-        align-items: center;
-    }
+  .my-appointments .exercise-card__top-wrap {
+    flex: unset;
+    justify-content: flex-start;
+    align-items: center;
+  }
 
-    .my-appointments .exercise-card__right-wrap {
-        flex: unset;
-        flex-direction: column;
-        gap: 0.5rem;
-    }
+  .my-appointments .exercise-card__right-wrap {
+    flex: unset;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
 
-    .my-appointments .text-align-center {
-        flex-shrink: 0;
-    }
+  .my-appointments .text-align-center {
+    flex-shrink: 0;
+  }
 }

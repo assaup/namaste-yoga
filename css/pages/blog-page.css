@@ -40,7 +40,6 @@
     margin: 0 auto;
     text-align: center;
   }
-
 }
 @media (min-width: 1280px) {
   .blog-container {
@@ -50,11 +49,7 @@
   .image-blog {
     width: 50%;
   }
-  .blog-content{
+  .blog-content {
     width: 50%;
   }
-  
 }
-
-
-

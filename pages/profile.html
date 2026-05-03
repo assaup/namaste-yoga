@@ -1,196 +1,198 @@
 <!doctype html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Namaste</title>
-    <link rel="stylesheet" href="../css/main.css" />
-    <script src="../js/main.js" defer></script>
-  </head>
-  <body>
-    <header class="header">
-      <div class="logo">
-        <a href="/">
-          <img src="../img/logo.svg" alt="Логотип" />
-        </a>
-      </div>
 
-      <nav class="full-menu" id="full-menu">
-        <div class="logo logo--menu">
-          <img src="../img/logo-white.svg" alt="Логотип" class="logo-white" />
-        </div>
-        <ul class="full-menu__list">
-          <li><a class="full-menu__link" href="/">Главная</a></li>
-          <li>
-            <a class="full-menu__link" href="../pages/about.html">Йога</a>
-          </li>
-          <li>
-            <a class="full-menu__link" href="../pages/shedule.html"
-              >Расписание</a
-            >
-          </li>
-          <li>
-            <a class="full-menu__link" href="../pages/subscription.html"
-              >Абонементы</a
-            >
-          </li>
-          <li><a class="full-menu__link" href="../pages/blog.html">Блог</a></li>
-        </ul>
-      </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Namaste</title>
+  <link rel="stylesheet" href="../css/main.css" />
+  <script src="../js/main.js" defer></script>
+</head>
 
-      <button class="burger" id="burger">
-        <span class="burger__line"></span>
-        <span class="burger__line"></span>
-        <span class="burger__line"></span>
-      </button>
-
-      <a href="../pages/profile.html" class="btn__login">
-        <img src="../img/profile.svg" alt="" />
+<body>
+  <header class="header">
+    <div class="logo">
+      <a href="/">
+        <img src="../img/logo.svg" alt="Логотип" />
       </a>
-    </header>
-    <main>
-      <div class="container">
-        <section class="section">
-          <h1 class="title">Профиль</h1>
-          <div class="profile">
-            <img src="../img/avatar.jpg" alt="" class="profile__img" />
-            <div class="profile-content">
-              <h2 class="profile__name">Мария Туманова</h2>
-              <p class="profile__data">
-                Email: <span class="profile__value">mmarfussha@mail.ru</span>
-              </p>
-              <p class="profile__data">
-                Возраст: <span class="profile__value">20 лет</span>
-              </p>
-              <p class="profile__data">
-                Номер: <span class="profile__value">89123456789</span>
-              </p>
-              <p class="profile__data">
-                Уровень: <span class="profile__value">Магистр Йога</span>
-              </p>
-              <p class="profile__data">
-                Стаж: <span class="profile__value">3 посещения</span>
-              </p>
-            </div>
-          </div>
-        </section>
-        <section class="section section-my-data">
-          <div class="my-subscription-box">
-            <h2 class="title title_black">Мои абонементы</h2>
-            <div class="my-subscription">
-              <h3 class="title-3">Абонемент на 5 занятий</h3>
-              <p>Осталось 4/5</p>
-            </div>
-          </div>
-          <div class="my-appointments">
-            <h2 class="title title_black">Мои записи</h2>
-            <div class="exercise-card">
-              <div class="exercise-card__top-wrap">
-                <p class="exercise-card__date">
-                  25.03 <br />
-                  ср
-                </p>
-                <div class="exercise-card__right-wrap">
-                  <h3 class="exercise-card__title">
-                    Хатха-йога, <span class="color-red">7:00</span>
-                  </h3>
-                  <p>Маргарита Шевчук</p>
-                </div>
-              </div>
+    </div>
 
-              <div class="text-align-center">
-                <button class="btn btn_red">Отменить</button>
-              </div>
-            </div>
-          </div>
-        </section>
+    <nav class="full-menu" id="full-menu">
+      <div class="logo logo--menu">
+        <img src="../img/logo-white.svg" alt="Логотип" class="logo-white" />
       </div>
-    </main>
-    <footer class="footer">
-      <div class="container footer-cont">
-        <div class="footer-cont__top">
-          <a href="/">
-            <img src="../img/logo-white.svg" alt="logo" />
-          </a>
-          <div class="footer__block">
-            <h3 class="footer__title">Главная</h3>
-            <ul class="footer__list">
-              <li class="footer__item">
-                <a class="link" href="../pages/shedule.html">Расписание</a>
-              </li>
-              <li class="footer__item">
-                <a class="link" href="../pages/subscription.html">Абонементы</a>
-              </li>
-              <li class="footer__item">
-                <a class="link" href="../pages/about.html">Йога</a>
-              </li>
-              <li class="footer__item">
-                <a class="link" href="../pages/blog.html">Блог</a>
-              </li>
-              <li class="footer__item">
-                <a class="link" href="../pages/profile.html">Личный кабинет</a>
-              </li>
-            </ul>
-          </div>
-          <div class="footer__block">
-            <h3 class="footer__title">Ресурсы</h3>
-            <ul class="footer__list">
-              <li class="footer__item">
-                <a class="link" href="#">Карьера</a>
-              </li>
-              <li class="footer__item">
-                <a class="link" href="#">Реклама</a>
-              </li>
-              <li class="footer__item">
-                <a class="link" href="#">Волонтерство</a>
-              </li>
-              <li class="footer__item">
-                <a class="link" href="#">Работа</a>
-              </li>
-            </ul>
-          </div>
-          <div class="footer__block">
-            <h3 class="footer__title">Пользователям</h3>
-            <ul class="footer__list">
-              <li class="footer__item">
-                <a class="link" href="#">Поддержка</a>
-              </li>
-              <li class="footer__item">
-                <a class="link" href="#">FAQ</a>
-              </li>
-              <li class="footer__item">
-                <a class="link" href="#">Документация</a>
-              </li>
-              <li class="footer__item">
-                <a class="link" href="#">Партнеры</a>
-              </li>
-            </ul>
+      <ul class="full-menu__list">
+        <li><a class="full-menu__link hidden" href="../pages/profile.html">Личный кабинет</a></li>
+
+        <li><a class="full-menu__link" href="/">Главная</a></li>
+        <li>
+          <a class="full-menu__link" href="../pages/about.html">Йога</a>
+        </li>
+        <li>
+          <a class="full-menu__link" href="../pages/shedule.html">Расписание</a>
+        </li>
+        <li>
+          <a class="full-menu__link" href="../pages/subscription.html">Абонементы</a>
+        </li>
+        <li><a class="full-menu__link" href="../pages/blog.html">Блог</a></li>
+      </ul>
+    </nav>
+
+    <button class="burger" id="burger">
+      <span class="burger__line"></span>
+      <span class="burger__line"></span>
+      <span class="burger__line"></span>
+    </button>
+
+    <a href="../pages/profile.html" class="btn__login">
+      <img src="../img/profile.svg" alt="" />
+    </a>
+  </header>
+  <main>
+    <div class="container">
+      <section class="section">
+        <h1 class="title">Профиль</h1>
+        <div class="profile">
+          <img src="../img/avatar.jpg" alt="" class="profile__img" />
+          <div class="profile-content">
+            <h2 class="profile__name">Мария Туманова</h2>
+            <p class="profile__data">
+              Email: <span class="profile__value">mmarfussha@mail.ru</span>
+            </p>
+            <p class="profile__data">
+              Возраст: <span class="profile__value">20 лет</span>
+            </p>
+            <p class="profile__data">
+              Номер: <span class="profile__value">89123456789</span>
+            </p>
+            <p class="profile__data">
+              Уровень: <span class="profile__value">Магистр Йога</span>
+            </p>
+            <p class="profile__data">
+              Стаж: <span class="profile__value">3 посещения</span>
+            </p>
           </div>
         </div>
-        <div class="footer__line"></div>
-        <div class="footer__end">
-          <ul class="footer__list-end">
+      </section>
+      <section class="section section-my-data">
+        <div class="my-subscription-box">
+          <h2 class="title title_black">Мои абонементы</h2>
+          <div class="my-subscription">
+            <h3 class="title-3">Абонемент на 5 занятий</h3>
+            <p>Осталось 4/5</p>
+          </div>
+        </div>
+        <div class="my-appointments">
+          <h2 class="title title_black">Мои записи</h2>
+          <div class="exercise-card">
+            <div class="exercise-card__top-wrap">
+              <p class="exercise-card__date">
+                25.03 <br />
+                ср
+              </p>
+              <div class="exercise-card__right-wrap">
+                <h3 class="exercise-card__title">
+                  Хатха-йога, <span class="color-red">7:00</span>
+                </h3>
+                <p>Маргарита Шевчук</p>
+              </div>
+            </div>
+
+            <div class="text-align-center">
+              <button class="btn btn_red">Отменить</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="container footer-cont">
+      <div class="footer-cont__top">
+        <a href="/">
+          <img src="../img/logo-white.svg" alt="logo" />
+        </a>
+        <div class="footer__block">
+          <h3 class="footer__title">Навигация</h3>
+          <ul class="footer__list">
             <li class="footer__item">
-              <a class="footer__doc" href="#"
-                >2026, Moscow Polytechnic University</a
-              >
+              <a class="link" href="/">Главная</a>
             </li>
             <li class="footer__item">
-              <a class="footer__doc" href="#">Privacy Policy</a>
+              <a class="link" href="../pages/shedule.html">Расписание</a>
             </li>
             <li class="footer__item">
-              <a class="footer__doc" href="#">Terms of Service</a>
+              <a class="link" href="../pages/subscription.html">Абонементы</a>
             </li>
             <li class="footer__item">
-              <a class="footer__doc" href="#">Cookies Settings</a>
+              <a class="link" href="../pages/about.html">Йога</a>
+            </li>
+            <li class="footer__item">
+              <a class="link" href="../pages/blog.html">Блог</a>
+            </li>
+            <li class="footer__item">
+              <a class="link" href="../pages/profile.html">Личный кабинет</a>
             </li>
           </ul>
-          <div class="footer__networks">
-            <img src="../img/vk.svg" alt="" class="network-icon" />
-            <img src="../img/tg.svg" alt="" class="network-icon" />
-          </div>
+        </div>
+        <div class="footer__block">
+          <h3 class="footer__title">Ресурсы</h3>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a class="link" href="#">Карьера</a>
+            </li>
+            <li class="footer__item">
+              <a class="link" href="#">Реклама</a>
+            </li>
+            <li class="footer__item">
+              <a class="link" href="#">Волонтерство</a>
+            </li>
+            <li class="footer__item">
+              <a class="link" href="#">Работа</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__block">
+          <h3 class="footer__title">Пользователям</h3>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a class="link" href="#">Поддержка</a>
+            </li>
+            <li class="footer__item">
+              <a class="link" href="#">FAQ</a>
+            </li>
+            <li class="footer__item">
+              <a class="link" href="#">Документация</a>
+            </li>
+            <li class="footer__item">
+              <a class="link" href="#">Партнеры</a>
+            </li>
+          </ul>
         </div>
       </div>
-    </footer>
-  </body>
+      <div class="footer__line"></div>
+      <div class="footer__end">
+        <ul class="footer__list-end">
+          <li class="footer__item">
+            <a class="footer__doc" href="#">2026, Moscow Polytechnic University</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__doc" href="#">Privacy Policy</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__doc" href="#">Terms of Service</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__doc" href="#">Cookies Settings</a>
+          </li>
+        </ul>
+        <div class="footer__networks">
+          <img src="../img/vk.svg" alt="" class="network-icon" />
+          <img src="../img/tg.svg" alt="" class="network-icon" />
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
 </html>

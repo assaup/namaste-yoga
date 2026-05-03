@@ -1,258 +1,238 @@
 <!doctype html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Namaste</title>
-    <link rel="stylesheet" href="../css/main.css" />
-    <script src="../js/main.js" defer></script>
-  </head>
-  <body>
-    <header class="header">
-      <div class="logo">
-        <a href="/">
-          <img src="../img/logo.svg" alt="Логотип" />
-        </a>
-      </div>
 
-      <nav class="full-menu" id="full-menu">
-        <div class="logo logo--menu">
-          <img src="../img/logo-white.svg" alt="Логотип" class="logo-white" />
-        </div>
-        <ul class="full-menu__list">
-          <li><a class="full-menu__link" href="/">Главная</a></li>
-          <li>
-            <a class="full-menu__link" href="../pages/about.html">Йога</a>
-          </li>
-          <li>
-            <a class="full-menu__link" href="../pages/shedule.html"
-              >Расписание</a
-            >
-          </li>
-          <li>
-            <a class="full-menu__link" href="../pages/subscription.html"
-              >Абонементы</a
-            >
-          </li>
-          <li><a class="full-menu__link" href="../pages/blog.html">Блог</a></li>
-        </ul>
-      </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Namaste</title>
+  <link rel="stylesheet" href="../css/main.css" />
+  <script src="../js/main.js" defer></script>
+</head>
 
-      <button class="burger" id="burger">
-        <span class="burger__line"></span>
-        <span class="burger__line"></span>
-        <span class="burger__line"></span>
-      </button>
-
-      <a href="../pages/profile.html" class="btn__login">
-        <img src="../img/profile.svg" alt="" />
+<body>
+  <header class="header">
+    <div class="logo">
+      <a href="/">
+        <img src="../img/logo.svg" alt="Логотип" />
       </a>
-    </header>
-    <main>
-      <div class="container">
-        <section class="section">
-          <h1 class="title">Блог</h1>
+    </div>
 
-          <button class="btn btn__form" id="openBtn">
-            + Добавить статью
-          </button>
-
-          <form class="form-card" id="formCard">
-            <h3 class="form-title">Новая запись</h3>
-            <label class="form__label">
-              Заголовок
-              <input
-              class="form__input-login"
-                type="text"
-                id="fTitle"
-                placeholder="Введите заголовок..."
-              />
-            </label>
-
-            <label class="form__label">
-              Текст записи
-              <textarea
-              class="form__input-login"
-                id="fText"
-                placeholder="Напишите текст публикации..."
-              ></textarea>
-            </label>
-            <label class="form__label">
-              Изображение
-              <input type="file" id="fFile" class="form__input-login"/>
-            </label>
-
-            <div class="form-actions">
-              <button class="btn btn__form" id="submitBtn">Опубликовать</button>
-              <button class="btn btn__form" id="cancelBtn">Отмена</button>
-            </div>
-          </form>
-        </section>
-
-        <section class="section" id="blogSection">
-          <div class="blog-container">
-            <div class="blog-content">
-              <h2 class="title-blog">Мастер-класс в студии «NAMASTE»</h2>
-              <p class="text-blog">Дата публикации: <span>24.01.2026</span></p>
-              <p class="text-blog">
-                В нашей студии «NAMASTE» прошёл вдохновляющий мастер-класс по
-                йоге. Участники погрузились в практику под руководством опытного
-                преподавателя. Занятие было направлено на развитие гибкости,
-                силы и концентрации. Мы уделили внимание правильному дыханию и
-                технике выполнения асан. Практика подошла как новичкам, так и
-                продолжающим. После занятия участники отметили лёгкость в теле и
-                спокойствие в уме. Мы создали тёплую и поддерживающую атмосферу
-                для каждого. Благодарим всех, кто присоединился к этому событию.
-                Следите за расписанием — впереди ещё много интересных
-                мероприятий.
-              </p>
-            </div>
-            <img
-              class="image-blog"
-              src="../img/about-page/exercise.jpg"
-              alt=""
-            />
-          </div>
-
-          <div class="blog-container">
-            <div class="blog-content">
-              <h2 class="title-blog">Открытие детской йоги</h2>
-              <p class="text-blog">Дата публикации: <span>16.09.2025</span></p>
-              <p class="text-blog">
-                В Москве прошёл масштабный фестиваль йоги, собравший практиков
-                со всей страны. Участники смогли познакомиться с разными
-                направлениями — от хатха-йоги до медитации и дыхательных техник.
-                На мероприятии выступили опытные преподаватели и приглашённые
-                мастера. Гости посещали открытые классы, лекции и практики на
-                свежем воздухе. Особое внимание уделялось осознанности и
-                восстановлению внутреннего баланса. Атмосфера была наполнена
-                спокойствием, вдохновением и поддержкой. Такие события помогают
-                углубить практику и найти единомышленников. Мы всегда рады
-                делиться подобным опытом с нашими учениками. Следите за
-                новостями — возможно, в следующий раз мы поедем вместе.
-              </p>
-            </div>
-
-            <img
-              class="image-blog"
-              src="../img/about-page/exercise.jpg"
-              alt=""
-            />
-          </div>
-
-          <div class="blog-container">
-            <div class="blog-content">
-              <h2 class="title-blog">Фестиваль йоги в Москве</h2>
-              <p class="text-blog">Дата публикации: <span>20.02.2026</span></p>
-              <p class="text-blog">
-                Мы рады сообщить об открытии нового направления — йоги для детей
-                от 3 до 12 лет. Занятия будут проходить в игровой и безопасной
-                форме. Дети будут развивать гибкость, координацию и внимание.
-                Практики помогут улучшить осанку и общее самочувствие. Мы
-                используем мягкий подход, учитывая возрастные особенности.
-                Занятия способствуют снижению стресса и развитию уверенности.
-                Наши преподаватели имеют опыт работы с детьми. Атмосфера будет
-                дружелюбной и поддерживающей. Приглашаем ваших детей
-                познакомиться с йогой в лёгком и увлекательном формате.
-              </p>
-            </div>
-
-            <img
-              class="image-blog"
-              src="../img/about-page/exercise.jpg"
-              alt=""
-            />
-          </div>
-        </section>
+    <nav class="full-menu" id="full-menu">
+      <div class="logo logo--menu">
+        <img src="../img/logo-white.svg" alt="Логотип" class="logo-white" />
       </div>
-    </main>
-    <footer class="footer">
-      <div class="container footer-cont">
-        <div class="footer-cont__top">
-          <a href="/">
-            <img src="../img/logo-white.svg" alt="logo" />
-          </a>
-          <div class="footer__block">
-            <h3 class="footer__title">Главная</h3>
-            <ul class="footer__list">
-              <li class="footer__item">
-                <a class="link" href="../pages/shedule.html">Расписание</a>
-              </li>
-              <li class="footer__item">
-                <a class="link" href="../pages/subscription.html">Абонементы</a>
-              </li>
-              <li class="footer__item">
-                <a class="link" href="../pages/about.html">Йога</a>
-              </li>
-              <li class="footer__item">
-                <a class="link" href="../pages/blog.html">Блог</a>
-              </li>
-              <li class="footer__item">
-                <a class="link" href="../pages/profile.html">Личный кабинет</a>
-              </li>
-            </ul>
+      <ul class="full-menu__list">
+        <li><a class="full-menu__link hidden" href="../pages/profile.html">Личный кабинет</a></li>
+
+        <li><a class="full-menu__link" href="/">Главная</a></li>
+
+        <li>
+          <a class="full-menu__link" href="../pages/about.html">Йога</a>
+        </li>
+        <li>
+          <a class="full-menu__link" href="../pages/shedule.html">Расписание</a>
+        </li>
+        <li>
+          <a class="full-menu__link" href="../pages/subscription.html">Абонементы</a>
+        </li>
+        <li><a class="full-menu__link" href="../pages/blog.html">Блог</a></li>
+      </ul>
+    </nav>
+
+    <button class="burger" id="burger">
+      <span class="burger__line"></span>
+      <span class="burger__line"></span>
+      <span class="burger__line"></span>
+    </button>
+
+    <a href="../pages/profile.html" class="btn__login">
+      <img src="../img/profile.svg" alt="" />
+    </a>
+  </header>
+  <main>
+    <div class="container">
+      <section class="section">
+        <h1 class="title">Блог</h1>
+
+        <button class="btn btn__form" id="openBtn">+ Добавить статью</button>
+
+        <form class="form-card" id="formCard">
+          <h3 class="form-title">Новая запись</h3>
+          <label class="form__label">
+            Заголовок
+            <input class="form__input-login" type="text" id="fTitle" placeholder="Введите заголовок..." />
+          </label>
+
+          <label class="form__label">
+            Текст записи
+            <textarea class="form__input-login" id="fText" placeholder="Напишите текст публикации..."></textarea>
+          </label>
+          <label class="form__label">
+            Изображение
+            <input type="file" id="fFile" class="form__input-login" />
+          </label>
+
+          <div class="form-actions">
+            <button class="btn btn__form" id="submitBtn">Опубликовать</button>
+            <button class="btn btn__form" id="cancelBtn">Отмена</button>
           </div>
-          <div class="footer__block">
-            <h3 class="footer__title">Ресурсы</h3>
-            <ul class="footer__list">
-              <li class="footer__item">
-                <a class="link" href="#">Карьера</a>
-              </li>
-              <li class="footer__item">
-                <a class="link" href="#">Реклама</a>
-              </li>
-              <li class="footer__item">
-                <a class="link" href="#">Волонтерство</a>
-              </li>
-              <li class="footer__item">
-                <a class="link" href="#">Работа</a>
-              </li>
-            </ul>
+        </form>
+      </section>
+
+      <section class="section" id="blogSection">
+        <div class="blog-container">
+          <div class="blog-content">
+            <h2 class="title-blog">Мастер-класс в студии «NAMASTE»</h2>
+            <p class="text-blog">Дата публикации: <span>24.01.2026</span></p>
+            <p class="text-blog">
+              В нашей студии «NAMASTE» прошёл вдохновляющий мастер-класс по
+              йоге. Участники погрузились в практику под руководством опытного
+              преподавателя. Занятие было направлено на развитие гибкости,
+              силы и концентрации. Мы уделили внимание правильному дыханию и
+              технике выполнения асан. Практика подошла как новичкам, так и
+              продолжающим. После занятия участники отметили лёгкость в теле и
+              спокойствие в уме. Мы создали тёплую и поддерживающую атмосферу
+              для каждого. Благодарим всех, кто присоединился к этому событию.
+              Следите за расписанием — впереди ещё много интересных
+              мероприятий.
+            </p>
           </div>
-          <div class="footer__block">
-            <h3 class="footer__title">Пользователям</h3>
-            <ul class="footer__list">
-              <li class="footer__item">
-                <a class="link" href="#">Поддержка</a>
-              </li>
-              <li class="footer__item">
-                <a class="link" href="#">FAQ</a>
-              </li>
-              <li class="footer__item">
-                <a class="link" href="#">Документация</a>
-              </li>
-              <li class="footer__item">
-                <a class="link" href="#">Партнеры</a>
-              </li>
-            </ul>
-          </div>
+          <img class="image-blog" src="../img/about-page/exercise.jpg" alt="" />
         </div>
-        <div class="footer__line"></div>
-        <div class="footer__end">
-          <ul class="footer__list-end">
+
+        <div class="blog-container">
+          <div class="blog-content">
+            <h2 class="title-blog">Открытие детской йоги</h2>
+            <p class="text-blog">Дата публикации: <span>16.09.2025</span></p>
+            <p class="text-blog">
+              В Москве прошёл масштабный фестиваль йоги, собравший практиков
+              со всей страны. Участники смогли познакомиться с разными
+              направлениями — от хатха-йоги до медитации и дыхательных техник.
+              На мероприятии выступили опытные преподаватели и приглашённые
+              мастера. Гости посещали открытые классы, лекции и практики на
+              свежем воздухе. Особое внимание уделялось осознанности и
+              восстановлению внутреннего баланса. Атмосфера была наполнена
+              спокойствием, вдохновением и поддержкой. Такие события помогают
+              углубить практику и найти единомышленников. Мы всегда рады
+              делиться подобным опытом с нашими учениками. Следите за
+              новостями — возможно, в следующий раз мы поедем вместе.
+            </p>
+          </div>
+
+          <img class="image-blog" src="../img/about-page/exercise.jpg" alt="" />
+        </div>
+
+        <div class="blog-container">
+          <div class="blog-content">
+            <h2 class="title-blog">Фестиваль йоги в Москве</h2>
+            <p class="text-blog">Дата публикации: <span>20.02.2026</span></p>
+            <p class="text-blog">
+              Мы рады сообщить об открытии нового направления — йоги для детей
+              от 3 до 12 лет. Занятия будут проходить в игровой и безопасной
+              форме. Дети будут развивать гибкость, координацию и внимание.
+              Практики помогут улучшить осанку и общее самочувствие. Мы
+              используем мягкий подход, учитывая возрастные особенности.
+              Занятия способствуют снижению стресса и развитию уверенности.
+              Наши преподаватели имеют опыт работы с детьми. Атмосфера будет
+              дружелюбной и поддерживающей. Приглашаем ваших детей
+              познакомиться с йогой в лёгком и увлекательном формате.
+            </p>
+          </div>
+
+          <img class="image-blog" src="../img/about-page/exercise.jpg" alt="" />
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="container footer-cont">
+      <div class="footer-cont__top">
+        <a href="/">
+          <img src="../img/logo-white.svg" alt="logo" />
+        </a>
+        <div class="footer__block">
+          <h3 class="footer__title">Навигация</h3>
+          <ul class="footer__list">
             <li class="footer__item">
-              <a class="footer__doc" href="#"
-                >2026, Moscow Polytechnic University</a
-              >
+              <a class="link" href="/">Главная</a>
             </li>
             <li class="footer__item">
-              <a class="footer__doc" href="#">Privacy Policy</a>
+              <a class="link" href="../pages/shedule.html">Расписание</a>
             </li>
             <li class="footer__item">
-              <a class="footer__doc" href="#">Terms of Service</a>
+              <a class="link" href="../pages/subscription.html">Абонементы</a>
             </li>
             <li class="footer__item">
-              <a class="footer__doc" href="#">Cookies Settings</a>
+              <a class="link" href="../pages/about.html">Йога</a>
+            </li>
+            <li class="footer__item">
+              <a class="link" href="../pages/blog.html">Блог</a>
+            </li>
+            <li class="footer__item">
+              <a class="link" href="../pages/profile.html">Личный кабинет</a>
             </li>
           </ul>
-          <div class="footer__networks">
-            <img src="../img/vk.svg" alt="" class="network-icon" />
-            <img src="../img/tg.svg" alt="" class="network-icon" />
-          </div>
+        </div>
+        <div class="footer__block">
+          <h3 class="footer__title">Ресурсы</h3>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a class="link" href="#">Карьера</a>
+            </li>
+            <li class="footer__item">
+              <a class="link" href="#">Реклама</a>
+            </li>
+            <li class="footer__item">
+              <a class="link" href="#">Волонтерство</a>
+            </li>
+            <li class="footer__item">
+              <a class="link" href="#">Работа</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__block">
+          <h3 class="footer__title">Пользователям</h3>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a class="link" href="#">Поддержка</a>
+            </li>
+            <li class="footer__item">
+              <a class="link" href="#">FAQ</a>
+            </li>
+            <li class="footer__item">
+              <a class="link" href="#">Документация</a>
+            </li>
+            <li class="footer__item">
+              <a class="link" href="#">Партнеры</a>
+            </li>
+          </ul>
         </div>
       </div>
-    </footer>
-  </body>
+      <div class="footer__line"></div>
+      <div class="footer__end">
+        <ul class="footer__list-end">
+          <li class="footer__item">
+            <a class="footer__doc" href="#">2026, Moscow Polytechnic University</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__doc" href="#">Privacy Policy</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__doc" href="#">Terms of Service</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__doc" href="#">Cookies Settings</a>
+          </li>
+        </ul>
+        <div class="footer__networks">
+          <img src="../img/vk.svg" alt="" class="network-icon" />
+          <img src="../img/tg.svg" alt="" class="network-icon" />
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
 </html>
 
 <script>
@@ -263,7 +243,7 @@
   const fTitle = document.getElementById("fTitle");
   const fText = document.getElementById("fText");
   const fFile = document.getElementById("fFile");
- const blogSection = document.getElementById("blogSection");
+  const blogSection = document.getElementById("blogSection");
 
   openBtn.addEventListener("click", () => {
     formCard.classList.add("visible");

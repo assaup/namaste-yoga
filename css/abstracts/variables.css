@@ -1,17 +1,14 @@
-:root{
-    --color-red: #FF0000;
-    --color-black: #000000;
-    --color-green-light: #D7FFC5;
-    --color-green-dark: #1F831C;
-    --color-white: #ffffff;
+:root {
+  --color-red: #ff0000;
+  --color-black: #000000;
+  --color-green-light: #d7ffc5;
+  --color-green-dark: #1f831c;
+  --color-white: #ffffff;
 
-    --font-size-title: 4.8rem;
-    --font-size-text: 1.6rem;
+  --font-size-title: 4.8rem;
+  --font-size-text: 1.6rem;
 
-    --border-radius: 50px;
+  --border-radius: 50px;
 
-    --font-size-title-desktop: 5.1rem;
-
-
-    
+  --font-size-title-desktop: 5.1rem;
 }

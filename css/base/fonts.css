@@ -1,6 +1,20 @@
-@font-face{
-    font-family: 'Ruthless Sketch';
-    src: url(../../fonts/RuthlessSketch.ttf);
-    font-style: normal;
-    font-display: swap;
+@font-face {
+  font-family: "Ruthless Sketch";
+  src: url(../../fonts/RuthlessSketch.ttf);
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url(../../fonts/Roboto_Condensed-Regular.ttf);
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url(../../fonts/Roboto_Condensed-ExtraBold.ttf);
+  font-style: normal;
+  font-display: swap;
+  font-weight: 700;
 }

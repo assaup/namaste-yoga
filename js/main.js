@@ -254,13 +254,13 @@ function render() {
 }
 
 function renderCards() {
-  const direction = document.getElementById('directions-select').value;
-  const level = document.getElementById('level-select').value;
-  const container = document.getElementById('cards-container');
+  const direction = document.getElementById("directions-select").value;
+  const level = document.getElementById("level-select").value;
+  const container = document.getElementById("cards-container");
 
-  container.innerHTML = ''; // очищаем только контейнер
+  container.innerHTML = ""; // очищаем только контейнер
 
-  const filtered = classes.filter(cls => {
+  const filtered = classes.filter((cls) => {
     if (direction && cls.direction !== direction) return false;
     if (level && cls.level !== level) return false;
 
@@ -274,7 +274,7 @@ function renderCards() {
   });
 
   container.innerHTML = filtered.length
-    ? filtered.map(createCard).join('')
+    ? filtered.map(createCard).join("")
     : '<p class="no-results">Занятий по выбранным фильтрам не найдено.</p>';
 }
 

@@ -106,18 +106,20 @@ body.no-scroll {
 }
 
 @media (min-width: 768px) {
-    .header{
-        padding-block: .3rem;
-    }
+  .header {
+    padding-block: 0.3rem;
+  }
   .burger {
+    display: none;
+  }
+  .hidden {
     display: none;
   }
 
   .btn__login {
     display: inline-block;
     white-space: nowrap;
-    padding-top: .7rem;
-    
+    padding-top: 0.7rem;
   }
 
   .full-menu {
@@ -126,8 +128,8 @@ body.no-scroll {
     background-color: transparent;
     opacity: 1;
     visibility: visible;
-    padding-top: 0; 
-    flex: 1; 
+    padding-top: 0;
+    flex: 1;
     display: flex;
   }
 

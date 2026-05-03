@@ -1,14 +1,13 @@
-.selects{
-    display: flex;
-    gap: 2rem;
-    margin-bottom: 5rem;
+.selects {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 5rem;
 }
-.shedule-select{
-    border-radius: 5px;
-    padding: .2rem .5rem;
-    width: 100%;
-    border: 2px solid var(--color-black);
-
+.shedule-select {
+  border-radius: 5px;
+  padding: 0.2rem 0.5rem;
+  width: 100%;
+  border: 2px solid var(--color-black);
 }
 
 .calendar {
@@ -100,11 +99,10 @@
   background: #e8f5e8;
 }
 
-
-.shedule-title{
-    color: var(--color-green-dark);
-    font-size: 2rem;
-    margin-bottom: 3rem;
+.shedule-title {
+  color: var(--color-green-dark);
+  font-size: 2rem;
+  margin-bottom: 3rem;
 }
 .class-card {
   overflow: hidden;
@@ -153,35 +151,31 @@
   font-weight: 600;
 }
 
-
-
 .warning-card {
-    background-color: var(--color-green-dark);
-    color: var(--color-white);
-    padding: 3rem 2.5rem 4rem ;
-    text-align: center;
-    border-radius: var(--border-radius);
-
+  background-color: var(--color-green-dark);
+  color: var(--color-white);
+  padding: 3rem 2.5rem 4rem;
+  text-align: center;
+  border-radius: var(--border-radius);
 }
-.warning-card__title{
-    margin-bottom: 1rem;
-    text-transform: uppercase;
-    font-size: 2rem;
+.warning-card__title {
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  font-size: 2rem;
 }
 
-.no-results{
+.no-results {
   margin-bottom: 3rem;
-  
 }
 
 @media (min-width: 768px) {
-  .selects{
+  .selects {
     justify-content: center;
   }
-  .shedule-select{
-      width: 20rem;
+  .shedule-select {
+    width: 20rem;
   }
-  .calendar{
+  .calendar {
     max-width: 70rem;
     margin: 0 auto;
   }
@@ -189,18 +183,17 @@
     width: 4rem;
     height: 4rem;
   }
-
 }
 
 @media (min-width: 1280px) {
-  .class-card{
+  .class-card {
     display: flex;
   }
-  .class-card__header{
+  .class-card__header {
     display: flex;
-    align-items: center
+    align-items: center;
   }
-  .class-card__body{
+  .class-card__body {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -208,12 +201,12 @@
     padding-inline: 1rem;
     gap: 1.7rem;
   }
-  .class-card__badge{
+  .class-card__badge {
     font-size: 1.4rem;
     align-self: end;
     margin: 0;
   }
-  .warning-card{
+  .warning-card {
     max-width: 1000px;
     margin: 0 auto;
     padding: 2.5rem;
