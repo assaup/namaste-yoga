@@ -22,7 +22,12 @@
 .main__text {
   margin-bottom: 6rem;
 }
-
+.main__link{
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  color: var(--color-black)
+}
 /* секция о нас */
 .about__text {
   margin-bottom: 1rem;
@@ -221,6 +226,17 @@
 .form__link-agreement {
   display: inline;
   color: inherit;
+}
+.error .form__checkbox-box {
+  border-color: red;
+}
+
+.form__input.error {
+  outline: 2px solid red;
+}
+
+.form__status {
+  margin-top: 1rem;
 }
 
 /* Секция Отзывы */

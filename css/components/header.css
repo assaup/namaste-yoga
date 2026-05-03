@@ -37,30 +37,25 @@
 .full-menu {
   position: fixed;
   top: 0;
-  left: 0;
-  width: 100%;
+  right: 0; 
+  width: 100%; 
   height: 100vh;
   background-color: var(--color-black);
   z-index: 9;
 
-  /* Центрируем ссылки */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding-top: 11rem;
 
-  /* Скрываем по умолчанию */
-  opacity: 0;
-  visibility: hidden;
-  transition: all 0.4s ease;
+  transform: translateX(100%); 
+  transition: transform 0.4s ease;
+}
+.full-menu.is-active {
+  transform: translateX(0);
 }
 
-/* Состояние, когда меню открыто */
-.full-menu.is-active {
-  opacity: 1;
-  visibility: visible;
-}
 
 .full-menu__list {
   list-style: none;
@@ -131,6 +126,7 @@ body.no-scroll {
     padding-top: 0;
     flex: 1;
     display: flex;
+    transform: none;
   }
 
   .logo--menu {

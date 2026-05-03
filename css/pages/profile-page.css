@@ -33,7 +33,10 @@
 .color-red {
   color: var(--color-red);
 }
-
+.zero-app{
+  text-align: center;
+  padding: 1.5rem;
+}
 @media (min-width: 768px) {
   .profile__img {
     width: 30rem;

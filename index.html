@@ -20,7 +20,6 @@
         <img src="./img/logo-white.svg" alt="Логотип" class="logo-white" />
       </div>
       <ul class="full-menu__list">
-        <li><a class="full-menu__link hidden" href="./pages/profile.html">Личный кабинет</a></li>
         <li><a class="full-menu__link" href="/">Главная</a></li>
         <li><a class="full-menu__link" href="./pages/about.html">Йога</a></li>
         <li>
@@ -30,6 +29,9 @@
           <a class="full-menu__link" href="./pages/subscription.html">Абонементы</a>
         </li>
         <li><a class="full-menu__link" href="./pages/blog.html">Блог</a></li>
+        <li>
+          <a class="full-menu__link hidden" href="./pages/profile.html">Личный кабинет</a>
+        </li>
       </ul>
     </nav>
 
@@ -52,7 +54,7 @@
           Студия йоги в Москве, где тебя ждут новые возможности и лучшие
           тренера
         </p>
-        <button class="btn">Начни сейчас →</button>
+        <a href="#section-form" class="btn main__link">Начать сейчас →</a>
       </div>
     </section>
     <div class="container">
@@ -182,24 +184,24 @@
         </div>
       </section>
     </div>
-    <section class="section section-form">
+    <section class="section section-form" id="section-form">
       <div class="container">
         <h2 class="form__title">Записаться на вводное занятие</h2>
         <p class="form__text">
           Попробуйте себя в мире йоги всего за 1000 руб.
         </p>
-        <form class="form">
+        <form class="form" novalidate>
           <label class="form__label">
             ФИО
-            <input type="text" class="form__input" placeholder="Иванова Анна Ивановна" />
+            <input name="name" type="text" class="form__input" placeholder="Иванова Анна Ивановна" />
           </label>
           <label class="form__label">
             Почта
-            <input type="text" class="form__input" placeholder="example@mail.ru" />
+            <input name="email" type="email" class="form__input" placeholder="example@mail.ru" />
           </label>
           <label class="form__label">
             Дополнительная информация
-            <textarea class="form__textarea form__input" placeholder="Введите сообщение"></textarea>
+            <textarea name="message" class="form__textarea form__input" placeholder="Введите сообщение"></textarea>
           </label>
           <label class="form__container-agreement">
             <input class="form__checkbox" type="checkbox" name="agreement" />
@@ -210,6 +212,7 @@
             </p>
           </label>
           <button class="btn btn-action" type="submit">Записаться</button>
+          <p class="form__status"></p>
         </form>
       </div>
     </section>
@@ -368,5 +371,88 @@
     </div>
   </footer>
 </body>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const form = document.querySelector('.form');
+    const status = document.querySelector('.form__status');
+
+    const nameInput = form.elements.name;
+    const emailInput = form.elements.email;
+    const checkbox = form.elements.agreement;
+
+    function validateName() {
+      if (nameInput.value.trim().length < 5) {
+        nameInput.classList.add('error');
+        return false;
+      }
+      nameInput.classList.remove('error');
+      return true;
+    }
+
+    function validateEmail() {
+      if (!/^\S+@\S+\.\S+$/.test(emailInput.value.trim())) {
+        emailInput.classList.add('error');
+        return false;
+      }
+      emailInput.classList.remove('error');
+      return true;
+    }
+
+    function validateCheckbox() {
+      const container = checkbox.closest('.form__container-agreement');
+      if (!checkbox.checked) {
+        container.classList.add('error');
+        return false;
+      }
+      container.classList.remove('error');
+      return true;
+    }
+
+    nameInput.addEventListener('blur', validateName);
+    emailInput.addEventListener('blur', validateEmail);
+    nameInput.addEventListener('focus', () => {
+      nameInput.classList.remove('error');
+    });
+
+    emailInput.addEventListener('focus', () => {
+      emailInput.classList.remove('error');
+    });
+
+
+    checkbox.addEventListener('change', () => {
+      checkbox.closest('.form__container-agreement').classList.remove('error');
+    });
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+
+      const isValid =
+        validateName() &&
+        validateEmail() &&
+        validateCheckbox();
+
+      showMessage(isValid);
+    });
+
+    function showMessage(success) {
+      status.textContent = success
+        ? 'Заявка отправлена'
+        : 'Проверьте поля';
+
+      status.style.color = success ? 'lightgreen' : 'tomato';
+
+      status.style.opacity = '1';
+
+      // скрыть через 2 секунды
+      setTimeout(() => {
+        status.style.opacity = '0';
+      }, 2000);
+
+      if (success) {
+        form.reset();
+      }
+    }
+  });
+</script>
 
 </html>

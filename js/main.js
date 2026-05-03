@@ -38,6 +38,7 @@ links.forEach((link) => {
 
 const classes = [
   {
+    id: 1,
     date: new Date(2026, 2, 23), // год, месяц (0-11), день
     day: "пн",
     title: "Хатха-йога",
@@ -48,6 +49,7 @@ const classes = [
     spots: 7,
   },
   {
+    id: 2,
     date: new Date(2026, 2, 23),
     day: "пн",
     title: "Виньяса-йога",
@@ -58,6 +60,7 @@ const classes = [
     spots: 3,
   },
   {
+    id: 3,
     date: new Date(2026, 2, 24),
     day: "вт",
     title: "Силовая йога",
@@ -68,6 +71,7 @@ const classes = [
     spots: 5,
   },
   {
+    id: 4,
     date: new Date(2026, 2, 25),
     day: "ср",
     title: "Хатха-йога",
@@ -78,6 +82,7 @@ const classes = [
     spots: 10,
   },
   {
+    id: 5,
     date: new Date(2026, 2, 26),
     day: "чт",
     title: "Йога для детей",
@@ -91,6 +96,8 @@ const classes = [
 
 function createCard(cls) {
   const dateStr = `${String(cls.date.getDate()).padStart(2, "0")}.${String(cls.date.getMonth() + 1).padStart(2, "0")}, ${cls.day}`;
+  const bookings = getBookings();
+  const isBooked = bookings.some(item => item.id === cls.id);
   return `
     <div class="class-card">
       <p class="class-card__header">${dateStr}</p>
@@ -99,9 +106,9 @@ function createCard(cls) {
           <p class="class-card__title">${cls.title}. <span class="class-card__time">${cls.time}</span></p>
           <p class="class-card__trainer">${cls.trainer}</p>
         </div>
-        <p class="class-card__badge"><span>Уровень подготовки:</span> ${cls.level}</p>
-        <p class="class-card__badge"><span>Количество свободных мест:</span> ${cls.spots}</p>
-        <button class="btn btn_red">Записаться</button>
+        <button class="btn btn_red js-book-btn" data-id="${cls.id}">
+          ${isBooked ? 'Отменить' : 'Записаться'}
+        </button>
       </div>
     </div>
   `;
@@ -301,3 +308,35 @@ document.getElementById("next").onclick = () => {
 };
 
 render();
+
+
+function getBookings() {
+  return JSON.parse(localStorage.getItem('bookings')) || [];
+}
+function saveBookings(data) {
+  localStorage.setItem('bookings', JSON.stringify(data));
+}
+
+document.addEventListener('click', (e) => {
+  if (!e.target.classList.contains('js-book-btn')) return;
+
+  const id = Number(e.target.dataset.id);
+  let bookings = getBookings();
+
+  const exists = bookings.find(item => item.id === id);
+
+  if (exists) {
+    // удалить
+    bookings = bookings.filter(item => item.id !== id);
+    e.target.textContent = 'Записаться';
+  } else {
+    // добавить
+    const cls = classes.find(c => c.id === id);
+    bookings.push(cls);
+    e.target.textContent = 'Отменить';
+  }
+
+  saveBookings(bookings);
+});
+
+
